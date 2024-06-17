@@ -1,0 +1,27 @@
+@use 'foundation' as *;
+
+.l-section {
+    padding-top: prem(30);
+    padding-left: prem(16);
+    padding-right: prem(16);
+    @include mq(md) {
+        padding-top: prem(49);
+        padding-left: prem(32);
+    }
+}
+
+.l-section.u-bg-white {
+    padding-top: prem(20);
+    margin-top: prem(52);
+    padding-bottom: prem(64.6);
+    @include mq(md) {
+        padding-top: prem(46);
+        margin-top: prem(68);
+        padding-bottom: prem(67.7);
+    }
+}
+
+.l-section.sub {
+    padding-left: 0;
+    padding-right: 0;
+}

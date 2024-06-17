@@ -1,0 +1,12 @@
+@use 'foundation' as *;
+
+.c-admin__container {
+    padding-left: prem(20);
+    padding-right: prem(20);
+    padding-bottom: prem(50);
+    @include mq(md) {
+        padding-left: prem(40);
+        padding-right: prem(40);
+        padding-bottom: prem(72.5);
+    }
+}

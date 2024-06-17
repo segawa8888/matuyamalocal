@@ -1,0 +1,13 @@
+@use 'foundation' as *;
+
+.u-text-underline {
+    text-decoration: underline;
+}
+
+.u-text-through {
+    text-decoration: line-through;
+}
+
+.u-text-through-red {
+    text-decoration: line-through solid $c-deep-red;
+}

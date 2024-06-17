@@ -1,0 +1,53 @@
+@use 'foundation' as *;
+
+.p-top-mv {
+    margin-top: prem(20);
+    margin-left: prem(16);
+    margin-right: prem(16);
+    @include mq(md) {
+        margin-top: prem(40);
+        margin-left: prem(32);
+        margin-right: prem(32);
+    }
+}
+
+.p-swiper__slide {
+    height:auto;
+}
+
+.p-top-mv__slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: prem(10);
+}
+
+.c-main.c-hidden-main .p-top-mv {
+    @include mq(md) {
+        margin-left: prem(16);
+        margin-right: prem(16);
+    }
+
+    .p-top-mv__slide img {
+        @include mq(md) {
+            aspect-ratio: 1280/720;
+        }
+    }
+}
+
+// pagination
+
+.p-top-mv__pagination.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    position: static;
+    margin-top: prem(11);
+    @include mq(md) {
+        margin-top: prem(18.5);
+    }
+}
+
+.swiper-pagination-bullet {
+    background-color: #BABABA;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $c-black;
+}

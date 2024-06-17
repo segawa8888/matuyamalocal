@@ -1,0 +1,102 @@
+@use 'foundation' as *;
+
+.p-admin-user__container {
+    overflow-x:scroll;
+}
+
+.p-admin-user {
+    padding:prem(15) 0 prem(18) 0;
+}
+
+.p-admin-user__table {
+    width: 100%;
+
+    thead {
+        tr {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            padding: 0 prem(47) prem(13) prem(47);
+            border-bottom: prem(1) solid #E5E5E5;
+            color: $c-gray;
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: prem(1) solid #E5E5E5;
+            margin:0 prem(47);
+            padding: prem(17.5) 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+
+    th,td {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        font-weight: $regular;
+    }
+
+    th {
+        font-size: prem(14);
+    }
+
+    td {
+        font-size: prem(13);
+    }
+
+     .number {
+        max-width: prem(42);
+        min-width: prem(42);
+     }
+
+     .name {
+        max-width: prem(55);
+        min-width: prem(55);
+        margin-left: prem(28);
+     }
+
+     .sorting {
+        max-width: prem(91);
+        min-width: prem(91);
+        margin-left: prem(57);
+     }
+
+     .address {
+        max-width: prem(143);
+        min-width: prem(143);
+        margin-left: prem(29);
+     }
+
+     .tel {
+        max-width: prem(90);
+        min-width: prem(90);
+        margin-left: prem(47);
+     }
+
+     .company {
+        max-width: prem(104);
+        min-width: prem(104);
+        margin-left: prem(42);
+     }
+
+     .detail {
+        max-width: prem(91);
+        min-width: prem(91);
+        margin-left: prem(46);
+     }
+}
+
+.p-admin-user__btn {
+    font-size: prem(14);
+    background: $c-gradient;
+    color: $c-white;
+    font-weight: $medium;
+    padding:prem(8) prem(18.5);
+    border-radius: prem(10);
+}

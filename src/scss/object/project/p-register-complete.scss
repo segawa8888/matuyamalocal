@@ -1,0 +1,28 @@
+@use 'foundation' as *;
+
+.p-register-complete__inner {
+    padding:prem(36.6) 0 prem(49.4) 0;
+    @include mq(md) {
+        padding:prem(73.6) 0 prem(95.3) 0;
+    }
+}
+
+.p-register-complete__message {
+    margin-top: prem(37.5);
+    font-size: prem(14);
+    line-height: calc(19.4 / 14);
+    font-weight: $medium;
+    @include mq(md) {
+        margin-top: prem(75);
+        max-width: prem(421);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.p-register-complete__caption {
+    margin-top: prem(8.3);
+    font-size: prem(12);
+    font-weight: $medium;
+    color: #505050;
+}

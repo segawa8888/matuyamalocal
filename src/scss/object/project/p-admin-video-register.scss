@@ -1,0 +1,304 @@
+@use 'foundation' as *;
+
+.p-admin-video-register__form {
+    padding-bottom:prem(30)
+}
+
+.p-admin-video-register-form__contents {
+    @include mq(md) {
+        display: flex;
+        gap:0 prem(70);
+    }
+}
+
+.p-admin-video-register-form__content {
+    @include mq(md) {
+        max-width: prem(450);
+        width: 100%;
+    }
+}
+
+.p-admin-video-register-form__content:nth-child(2) {
+    .p-admin-video-register-form__wrap {
+        @include mq(md) {
+            max-width: prem(336);
+        }
+    }
+}
+
+.p-admin-video-register-form__wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.p-admin-video-register-form__wrap:nth-child(n+2) {
+    margin-top: prem(40);
+}
+
+.p-admin-video-register-form__label {
+    font-size: prem(14);
+    font-weight: $bold;
+    color: $c-black;
+}
+
+.p-admin-video-register-form__label span {
+    margin-left: prem(10);
+    padding: prem(4) prem(5);
+    display: inline-block;
+    font-size: prem(12);
+    color:$c-white;
+    background:$c-gradient;
+    font-weight: $medium;
+    border-radius: prem(5);
+}
+
+.p-admin-video-register-form__input {
+    width: 100%;
+    margin-top: prem(10);   
+}
+
+.p-admin-video-register-form-input input {
+	padding: prem(8) prem(12);
+	width: 100%;
+	font-size: prem(14);
+	line-height: 1;
+	border-radius: 0;
+	border: prem(1) solid #E5E5E5;
+	appearance: none;
+	background-color: $c-white;
+    border-radius: prem(5);
+    display: block;
+}
+
+.p-admin-video-register-form-input input:focus {
+	border: 1px solid #ccc;
+	box-shadow: none;
+	outline: none;
+}
+
+.p-admin-video-register-form__file {
+    margin-top: prem(10);
+    p {
+        font-size: prem(12);
+        color: $c-gray;
+        margin-top: prem(3);
+    }
+}
+
+.p-admin-video-register-form__preview {
+    margin-top: prem(21);
+    img {
+        border-radius: prem(10);
+        aspect-ratio: 415/200;
+        object-fit: cover;
+    }
+}
+
+.p-admin-video-register-form-select {
+    width: 100%;
+    margin-top: prem(12);
+}
+
+.p-admin-video-register-form-select select {
+    padding: prem(11.5) prem(50) prem(11.5) prem(15);
+    width: 100%;
+    font-size: prem(15);
+    line-height: 1;
+    border-radius: prem(5);
+    background-color: #F8F8F8;
+    border: prem(1) solid #E5E5E5;
+    background-image: url('../images/icon/icon_arrow_dawn_bk.svg');
+    background-repeat: no-repeat;
+    background-size: prem(8);
+    background-position: right prem(12.2) top prem(16.55);
+    appearance: none;
+    cursor: pointer;
+}
+
+.p-admin-video-register-form-select select::-ms-expand {
+    display: none;
+}
+
+.p-admin-video-register-form-radio label {
+    display: block;
+    @include mq(md){
+        display: inline-block;
+    }
+}
+
+.p-admin-video-register-form__radio {
+    margin-top: prem(16);
+    width: 100%;
+}
+
+.p-admin-video-register-form-radio label:not(:first-of-type) {
+    margin-top: prem(20);
+    @include mq(md){
+        margin-top: 0;
+        margin-left: prem(30);
+    }
+}
+
+.p-admin-video-register-form-radio input {
+    display: none;
+}
+
+.p-admin-video-register-form-radio input + span {
+    padding: 0 0 0 prem(30);
+    position: relative;
+    display: block;
+    font-size: prem(14);
+    line-height: 1;
+    cursor: pointer;
+    @include mq(md){
+        display: inline-block;
+    }
+}
+
+.p-admin-video-register-form-radio input + span::before {
+    content: "";
+    width: prem(21);
+    height: prem(21);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #fff;
+    border: prem(1) solid #E5E5E5;
+    border-radius: 50%;
+}
+
+.p-admin-video-register-form-radio input + span::after {
+    content: "";
+    padding: prem(2);
+    width: prem(11);
+    height: prem(11);
+    position: absolute;
+    top: 50%;
+    left: prem(5);
+    transform: translateY(-50%);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background:#F27E7E;
+    opacity: 0;
+    transition: .3s;
+}
+
+.p-admin-video-register-form-radio input:checked + span::after {
+    opacity: 1;
+}
+
+.p-admin-video-register-form-checkbox label {
+    display: block;
+    @include mq(md){
+        display: inline-block;
+    }
+}
+
+.p-admin-video-register-form-checkbox {
+    margin-top: prem(10);
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:prem(11) prem(20);
+}
+
+.p-admin-video-register-form-checkbox input {
+    display: none;
+}
+
+.p-admin-video-register-form-checkbox input + span {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0 0 prem(25);
+    position: relative;
+    font-size: prem(15);
+    line-height: 1;
+}
+
+.p-admin-video-register-form-checkbox input + span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #ccc;
+    display: block;
+    width: prem(15);
+    height: prem(15);
+}
+
+.p-admin-video-register-form-checkbox input + span::after {
+    content: "";
+    margin-top: prem(-2);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(-45deg);
+    display: block;
+    width: prem(15);
+    height: prem(8);
+    border-bottom: prem(3) solid #000;
+    border-left: prem(3) solid #000;
+    transition:  .3s;
+    opacity: 0;
+}
+
+.p-admin-video-register-form-checkbox input:checked + span::after {
+    opacity: 1;
+}
+
+.p-admin-video-register-form-submit input {
+    padding: prem(25) prem(125);
+    color: #fff;
+    display: inline-block;
+    font-size: prem(16);
+    line-height: 1;
+    background-color: #C5AE66;
+    background-image: none;
+    border: none;
+    border-radius: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.p-admin-video-register-form-submit input:hover,
+.p-admin-video-register-form-submit input:focus {
+    outline: none;
+}
+
+.p-admin-video-register-form-submit input:hover {
+    @include mq(md){
+        opacity: .8;
+    }
+}
+
+.p-admin-video-register-form-submit input::-moz-foucus-inner {
+    padding: 0;
+    border: none;
+}
+
+.p-admin-video-register-form-textarea textarea {
+    padding: prem(8) prem(15);
+    width: 100%;
+    min-height: prem(91);
+    font-size: prem(14);
+    border-radius: prem(5);
+    border: prem(1) solid #E5E5E5;
+    appearance: none;
+    background-color: transparent;
+    background-image: none;
+    margin-top: prem(12);
+}
+
+.p-admin-video-register-search__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0 prem(16);
+    margin-top: prem(64);
+}

@@ -1,0 +1,15 @@
+@use 'foundation' as *;
+
+.u-op0 {
+    opacity: 1;
+    @include mq(md) {
+        opacity: 0;
+    }
+}
+
+.u-op1 {
+    opacity: 0;
+    @include mq(md) {
+        opacity: 1;
+    }
+}

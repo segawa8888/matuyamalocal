@@ -1,0 +1,58 @@
+@use 'foundation' as *;
+
+.c-nav-bar {
+    z-index: 100;
+    cursor: pointer;
+    transition: 0.5s;
+    @include mq(md) {
+        position: fixed;
+        background-color: $c-black;
+        padding:prem(21) prem(14);
+        border-radius: 0 prem(10) prem(10) 0;
+        left:prem(256);
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.c-nav-bar__drawer {
+    max-width: prem(16);
+}
+
+.c-nav-bar__drawer.--close {
+    display: none;
+}
+
+.c-nav-bar__drawer.--double {
+    @include mq(md) {
+        display: none;
+    }
+}
+
+.c-nav-bar.c-hidden-nav-bar {
+    left:0;
+}
+
+.c-nav-bar.c-hidden-nav-bar {
+    .--drawer {
+        display: none;
+    }
+}
+
+.c-nav-bar.c-hidden-nav-bar {
+    .--close {
+        display: block;
+        @include mq(md) {
+            display: none;
+        }
+    }
+}
+
+.c-nav-bar.c-hidden-nav-bar {
+    .--double {
+        @include mq(md) {
+            display: block;
+        }
+    }
+}

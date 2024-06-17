@@ -1,0 +1,8 @@
+@use 'foundation' as *;
+
+.c-title {
+  font-size: prem(20);
+  line-height: calc(24/20);
+  font-weight:$bold;
+  color: $c-black;
+}

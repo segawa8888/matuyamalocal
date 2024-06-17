@@ -1,0 +1,47 @@
+@use 'foundation' as *;
+
+.p-login-body {
+  background-color:#EAEAEA ;
+}
+
+.p-login_CheckboxInput {
+    margin-top: prem(18);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: prem(30);
+  }
+  .p-login_CheckboxInput-Input {
+    margin: 0;
+    width: 0;
+    opacity: 0;
+  }
+
+  .p-login_CheckboxInput-Input:checked + .p-login_CheckboxInput-DummyInput {
+    border: prem(1) solid $c-black;
+  }
+  .p-login_CheckboxInput-Input:checked + .p-login_CheckboxInput-DummyInput::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: prem(1);
+    width: prem(17.48);
+    height: prem(12.73);
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXItY2hlY2siPjxwb2x5bGluZSBwb2ludHM9IjIwIDYgOSAxNyA0IDEyIj48L3BvbHlsaW5lPjwvc3ZnPg==") no-repeat center;
+  }
+  .p-login_CheckboxInput-DummyInput {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: prem(16);
+    height: prem(16);
+    border: solid prem(1) $c-black;
+  }
+  .p-login_CheckboxInput-LabelText {
+    margin-left: prem(8.5);
+    display: block;
+    font-size: prem(16);
+    font-weight: $medium;
+  }

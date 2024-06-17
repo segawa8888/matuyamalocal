@@ -1,0 +1,83 @@
+@use 'foundation' as *;
+
+.p-share {
+    position: relative;
+    cursor: pointer;
+}
+
+.p-share .p-share__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:prem(10);
+    flex-wrap:wrap;
+    position: absolute;
+    top: 100%;
+    padding:prem(20) prem(52.5);
+    width: 100vw;
+    background: $c-black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s opacity;
+    z-index:10;
+    border-radius: prem(10);
+    @include mq(md) {
+        left: 0;
+        width: prem(191.92);
+        padding:prem(14) prem(11) prem(15.3) prem(11);
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: prem(60);
+        width: 100%;
+        padding:prem(8) 0;
+        font-size: prem(12);
+        background-color: $c-white;
+        border-radius: prem(5);
+        text-align: center;
+        transition: 0.3s;
+        @include mq(md) {
+            position: relative;
+            padding:prem(5) 0;
+            max-width: 100%;
+        }
+        span {
+            max-width: prem(21);
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            margin-bottom: prem(7);
+            margin-top: prem(4);
+            @include mq(md) {
+                margin-top: initial;
+                margin-bottom: initial;
+                position: absolute;
+                top: 50%;
+                left: prem(5.3);
+                transform: translateY(-50%);
+                max-width: prem(15.92);
+            }
+        }
+        &:nth-child(n+2) {
+            @include mq(md) {
+                margin-top: prem(7);
+            }
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+        &:last-child {
+            max-width:100%;
+            width: 100%;
+        }
+    }
+}
+
+.p-share:hover .p-share__menu {
+    visibility: visible;
+    opacity: 1;
+}

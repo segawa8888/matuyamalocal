@@ -1,0 +1,17 @@
+@use 'foundation' as *;
+
+.c-admin-nav-footer {
+    margin-top: auto;
+    padding:prem(30) prem(25.6) prem(25) prem(32) ;
+}
+
+.c-admin-nav-footer__setting {
+    color: $c-gray;
+    font-size: prem(13);
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 0 prem(17.1);
+}

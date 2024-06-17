@@ -1,0 +1,214 @@
+@use 'foundation' as *;
+
+.p-admin-video-tags {
+    position: relative;
+}
+
+.p-admin-video-tags__box {
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.p-admin-video-tags__title {
+    font-size: prem(18);
+    font-weight: $bold;
+}
+
+.p-admin-video-tags__search {
+    margin-top: prem(30);
+    border: prem(1) solid #E5E5E5;
+    border-radius: prem(5);
+    color: $c-gray;
+    width: 100%;
+    padding:prem(11) prem(15);
+    @include mq(md) {
+        max-width: prem(286.67);
+        margin-top: initial;
+    }
+
+    input {
+        width: 100%;
+        appearance: none;
+        outline: none;
+        border:none;
+    }
+}
+
+.p-admin-video-tags__items {
+    @include mq(md) {
+        display: flex;
+        gap:0 prem(30);
+        margin-top: prem(40);
+    }
+}
+
+.p-admin-video-tags__item {
+    margin-top: prem(30);
+    @include mq(md) {
+        max-width: prem(300);
+        width: 100%;
+        margin-top: initial;
+    }
+}
+
+.p-admin-video-tags__item:last-child {
+    @include mq(md) {
+        max-width: prem(570);
+        width: 100%;
+    }
+}
+
+.p-admin-video-tags__btn {
+    margin-top: prem(34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: prem(10);
+    color: $c-white;
+    background: $c-gradient;
+    padding:prem(12) 0;
+    font-size: prem(14);
+    font-weight: $medium;
+    @include mq(md) {
+        max-width: prem(138);
+    }
+}
+
+.p-admin-video-tags__control {
+    display: flex;
+    align-items: center;
+    gap:0 prem(8);
+}
+
+.p-admin-video-tags__control p {
+    font-size: prem(14);
+    color: $c-black;
+    font-weight:$regular;
+}
+
+.p-admin-video-tags__select select {
+    padding: prem(6) prem(50) prem(6) prem(14);
+    max-width: prem(92);
+    width: 100%;
+    font-size: prem(14);
+    line-height: 1;
+    border-radius: prem(5);
+    border: prem(1) solid #E5E5E5;
+    background-color: #F8F8F8;
+    background-image: url('../images/icon/icon_arrow_dawn_bk.svg');
+    background-repeat: no-repeat;
+    background-size: prem(8);
+    background-position: right prem(12) top prem(11.5);
+    appearance: none;
+    cursor: pointer;
+}
+
+.p-admin-video-tags__application {
+    max-width: prem(51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: prem(5);
+    color: $c-white;
+    background: $c-gradient;
+    padding:prem(6) prem(11.5);
+    font-size: prem(14);
+    font-weight: $medium;
+}
+
+.p-admin-video-tags__area {
+    border:prem(1) solid #E5E5E5;
+    border-radius: prem(5);
+    width: 100%;
+    margin-top: prem(8.5);
+    overflow-x:scroll;
+    p {
+        font-size: prem(14);
+    }
+
+    .--left {
+        min-width:prem(130)
+    }
+
+    .--center {
+        min-width: prem(90);
+        margin-left: prem(63);
+    }
+    .--right {
+        min-width:prem(97);
+        margin-left: prem(61);
+    }
+}
+
+.p-admin-video-tags__head {
+    background-color: #F8F8F8;
+    border-radius: prem(5) prem(5) 0 0;
+    display: flex;
+    align-items: center;
+    padding:prem(10) prem(14);
+}
+
+.p-admin-video-tgs__checkbox input {
+    display: none;
+}
+
+.p-admin-video-tgs__checkbox input + span {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0 0 prem(25);
+    position: relative;
+    font-size: prem(14);
+    line-height: 1;
+}
+
+.p-admin-video-tgs__checkbox input + span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #ccc;
+    display: block;
+    width: prem(15);
+    height: prem(15);
+}
+
+.p-admin-video-tgs__checkbox input + span::after {
+    content: "";
+    margin-top: prem(-2);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(-45deg);
+    display: block;
+    width: prem(15);
+    height: prem(8);
+    border-bottom: prem(3) solid #000;
+    border-left: prem(3) solid #000;
+    transition:  .3s;
+    opacity: 0;
+}
+
+.p-admin-video-tgs__checkbox input:checked + span::after {
+    opacity: 1;
+}
+
+.p-admin-video-tags__body {
+    padding:prem(17) prem(14);
+    min-height: prem(370);
+    max-height:prem(370);
+}
+
+.p-admin-video-tags__table-row {
+    display: flex;
+    align-items: center;
+}
+
+.p-admin-video-tags__table-row:nth-child(n+2) {
+    margin-top: prem(15);
+}

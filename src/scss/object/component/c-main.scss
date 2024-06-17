@@ -1,0 +1,38 @@
+@use 'foundation' as *;
+
+.c-main {
+    background-color: #F8F8F8;
+    overflow: hidden;
+    position: relative;
+}
+
+.c-main-inner {
+    @include mq(md) {
+        max-width: calc(100% - 256px);
+        margin-left: auto;
+        transition: 0.5s;
+    }
+}
+
+.c-main.c-hidden-main .c-main-inner {
+    @include mq(md) {
+        padding-left: prem(16);
+        padding-right: prem(16);
+        margin:0 auto;
+        max-width: prem(1312);
+    }
+}
+
+.c-main.u-bg-white {
+    padding-bottom: prem(59.4);
+    @include mq(md) {
+        padding-bottom: prem(74);
+    }
+}
+
+.c-main.--notlogin {
+    padding-bottom: prem(136.4);
+    @include mq(md) {
+        padding-bottom: prem(151);
+    }
+}

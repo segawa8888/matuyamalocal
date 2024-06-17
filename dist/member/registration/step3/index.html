@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 電話番号の自動検出と変換を無効にする -->
+  <meta name="format-detection" content="telephone=no" />
+
+  <title>松山ローカル大学</title>
+  <meta name="description" content="トップページの説明" />
+  <meta name="keywords" content="キーワード" />
+
+  <!-- ogp -->
+  <meta property="og:title" content="サイト名" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="サイトのドメイン" />
+  <meta property="og:image" content="OGP IMAGE" />
+  <meta property="og:site_name" content="サイトのドメイン" />
+  <meta property="og:description" content="トップページの説明" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="">
+  <link rel="apple-touch-icon" href="">
+  <!-- CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.css' integrity='sha512-1CRCT9P70z3SktzqL7P8o8YvlmT1nXwFeXLBuVBa4mzQJ4fsvpmsObWooerRi4WzQT8QFrBVz/36mt/XGPYVzw==' crossorigin='anonymous'/>
+  <link rel="stylesheet" href="../../../css/style.css">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/9854922e4c.js" crossorigin="anonymous"></script>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="p-register">
+
+    <header class="p-register-header">
+        <div class="p-register-header__logo">
+            <img src="../../../images/common/logo_bk.svg" alt="松山ローカル大学">
+        </div>
+    </header>
+
+    <main class="p-register-main">
+        <div class="p-register-main__wrapper">
+            <div class="c-register-main__inner">
+                <div class="p-register__container l-container lg:-md">
+                  <ul class="c-progressbar p-progressbar">
+                    <li class="complete">会員情報の登録</li>
+                    <li class="complete">メール認証</li>
+                    <li class="active">プラン・<br>お支払い方法の登録</li>
+                    <li>完了</li>
+                  </ul>
+                    <div class="p-register__inner">
+                        <p class="c-title u-text-center">プラン・お支払い方法の登録</p>
+                      <form class="p-register-form__plan p-register-form-plan" action="">
+                        <dt class="p-register-form__label">プランを選択する<span>必須</span></dt>
+                        <label class="p-register-form-plan__label" style="border: 2px solid rgb(33, 150, 226);">
+                          <input class="p-register-form-plan-input" type="radio" name="radio" id="plan_id" checked>
+                          <span class="p-register-form-plan-check"></span>
+                          <div class="p-register-form-plan__wrap">
+                            <div class="p-register-form-plan-text">
+                              <p><span class="u-text-blue">無料トライアル付</span>オンライン学生</p>
+                            </div>
+                            <p class="p-register-form-plan__price"><span class="u-text-red-1"><strong>0</strong>円</span><span class="u-text-through-red">3,000円</span>/月額<br><small>（税込3,300円）</small></p>
+                          </div>
+                          <ul class="p-register-form-plan__lists">
+                            <li class="p-register-form-plan__list">
+                              <span>
+                                <img src="../../../images/icon/icon_check_bl.svg" alt="check">
+                              </span>
+                              講義動画のアーカイブ視聴のみ
+                            </li>
+                          </ul>
+                        </label>
+                        <p class="p-register-form-plan__attention">無料期間終了後は自動で更新され、解約されるまで月額利用料：合計3,300円（税込）がかかります。<br>
+                          お客様の場合、2023年12月20日(水)までであればいつでも無料で解約できます。</p>
+                          <label class="p-register-form-plan__label">
+                            <input class="p-register-form-plan-input" type="radio" name="radio" id="plan_id">
+                            <span class="p-register-form-plan-check"></span>
+                            <div class="p-register-form-plan__wrap">
+                              <div class="p-register-form-plan-text">
+                                <p>受講生</p>
+                              </div>
+                              <p class="p-register-form-plan__price"><span class="u-text-red-1"><strong>　</strong>　</span><span>10,000</span>/月額<br><small>（税込11,000円）</small></p>
+                            </div>
+                            <ul class="p-register-form-plan__lists">
+                              <li class="p-register-form-plan__list">
+                                <span>
+                                  <img src="../../../images/icon/icon_check_bl.svg" alt="check">
+                                </span>
+                                受講生限定の交流イベントの参加
+                              </li>
+                              <li class="p-register-form-plan__list">
+                                <span>
+                                  <img src="../../../images/icon/icon_check_bl.svg" alt="check">
+                                </span>
+                                全講義の参加権利（優先案内あり）
+                              </li>
+                              <li class="p-register-form-plan__list">
+                                <span>
+                                  <img src="../../../images/icon/icon_check_bl.svg" alt="check">
+                                </span>
+                                講義動画のアーカイブ視聴<br>※懇親会のみ実費
+                              </li>
+                            </ul>
+                          </label>
+                          <label class="p-register-form-plan__label">
+                            <input class="p-register-form-plan-input" type="radio" name="radio" id="plan_id">
+                            <span class="p-register-form-plan-check"></span>
+                            <div class="p-register-form-plan__wrap">
+                              <div class="p-register-form-plan-text">
+                                <p>企業パートナー</p>
+                              </div>
+                              <p class="p-register-form-plan__price"><span class="u-text-red-1"><strong>　</strong>　</span><span>50,000</span>/月額<br><small>（税込55,000円）</small></p>
+                            </div>
+                            <ul class="p-register-form-plan__lists">
+                              <li class="p-register-form-plan__list">
+                                <span>
+                                  <img src="../../../images/icon/icon_check_bl.svg" alt="check">
+                                </span>
+                                ロゴ掲載
+                              </li>
+                              <li class="p-register-form-plan__list">
+                                <span>
+                                  <img src="../../../images/icon/icon_check_bl.svg" alt="check">
+                                </span>
+                                受講生限定の交流イベントの参加
+                              </li>
+                              <li class="p-register-form-plan__list">
+                                <span>
+                                  <img src="../../../images/icon/icon_check_bl.svg" alt="check">
+                                </span>
+                                全講義の参加権利（2名参加可能）
+                              </li>
+                              <li class="p-register-form-plan__list">
+                                <span>
+                                  <img src="../../../images/icon/icon_check_bl.svg" alt="check">
+                                </span>
+                                講義動画のアーカイブ視聴（社内利用可能）<br>※懇親会のみ実費
+                              </li>
+                            </ul>
+                          </label>
+                           <dt class="p-register-form__label">クレジットカード<span>必須</span></dt>
+                           <div class="p-register-form-plan__wrapper">
+                            <div class="p-register-form__input">
+                              <label class="p-register-form__label" for="card-number">カード番号</label>
+                              <input type="text" id="card-number" placeholder="1234 1234 1234 1234">
+                            </div>
+                      
+                            <div class="p-register-form__input">
+                              <label class="p-register-form__label" for="card-name">カード名義</label>
+                              <input type="text" id="card-name" placeholder="TARO YAMADA">
+                            </div>
+                      
+                            <div class="p-register-form__input">
+                              <label class="p-register-form__label" for="expiry-month">有効期限</label>
+                              <div class="p-register-form-select__wrap p-register-form-plan__select">
+                                <dd class="p-register-form__select p-register-form-select">
+                                    <select>
+                                    <option hidden="">-</option>
+                                    <option value="東京">東京</option>
+                                    <option value="大阪">大阪</option>
+                                    <option value="福岡">福岡</option>
+                                    <option value="その他">その他</option>
+                                    </select>
+                                    月　／
+                                </dd>
+                                <dd class="p-register-form__select p-register-form-select">
+                                    <select>
+                                    <option hidden="">-</option>
+                                    <option value="東京">東京</option>
+                                    <option value="大阪">大阪</option>
+                                    <option value="福岡">福岡</option>
+                                    <option value="その他">その他</option>
+                                    </select>
+                                    年
+                                </dd>
+                            </div>
+                          </div>
+                      
+                          <div class="p-register-form__input p-register-form-plan__code">
+                            <label class="p-register-form__label" for="security-code">セキュリティコード</label>
+                            <input type="text" id="security-code">
+                          </div>
+                          <p class="p-register-form__code-text">カード裏面の下3桁のコード（アメリカン・エキスプレスは表面のクレジット番号の右上4桁）</p>
+                        </div>
+                        <p class="p-register-form__text">利用開始ボタンををクリックすることにより<a href="">プライバシーポリシー</a> <a href="">利用規約</a>に同意するものとします。</p>
+                        <div class="p-register-form__submit p-register-form-submit">
+                        <input type="submit" value="利用開始する">
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+  <footer class="c-footer --nologin">
+    <div class="c-footer__wrapper">
+      <div class="c-footer__inner">
+        <div class="c-footer__content">
+          <div class="c-footer__icons">
+            <div class="c-footer__icon">
+              <a href="" target="_blank">
+                <img src="../../../images/icon/icon_facebook.svg" alt="facebook">
+              </a>
+            </div>
+            <div class="c-footer__icon">
+             <a href="" target="_blank">
+              <img src="../../../images/icon/icon_Instagram.svg" alt="Instagram">
+             </a>
+            </div>
+            <div class="c-footer__icon">
+              <a href="" target="_blank">
+                <img src="../../../images/icon/icon_x.svg" alt="Twitter（x）">
+              </a>
+            </div>
+            <div class="c-footer__icon">
+              <a href="" target="_blank">
+                <img src="../../../images/icon/icon_youtube.svg" alt="youtube">
+              </a>
+            </div>
+          </div>
+          <div class="c-footer__logo">
+            <a href="">
+              <img src="../../../images/common/logo_white.svg" alt="松山ローカル大学">
+            </a>
+          </div>
+          <p class="c-footer__copyright">©2023 Local Univercity Inc. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.js' integrity='sha512-/LKHQ9K9yatyOfEKXiysc9SPCpF6xkvfHQxtPkhdKS83GvfyIWDwKaOr3/LqVxbEX89Bqz+SbMHEPWm0AeRWnA==' crossorigin='anonymous'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="../../../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@use 'foundation' as *;
+
+.c-tab {
+    overflow: auto hidden;
+}
+
+.c-tab__menu {
+    display: flex;
+    align-items: center;
+    gap:0 prem(27);
+    white-space: nowrap;
+}
+
+.c-tab__menu-item input {
+    display: none;
+}
+
+.c-tab__menu-item label {
+    font-size: prem(12);
+    font-weight: $regular;
+    color: $c-gray;
+    cursor: pointer;
+    transition: 0.3s;
+    @include mq(md) {
+        font-weight: $medium;
+    }
+}
+
+.c-tab__menu-item input:checked+label {
+    background-color: $c-btn-blue;
+    border-radius: prem(11);
+    color: $c-white;
+    font-weight: $bold;
+    font-size: prem(13);
+    padding:prem(7) prem(12.5);
+    display: inline-block;
+}

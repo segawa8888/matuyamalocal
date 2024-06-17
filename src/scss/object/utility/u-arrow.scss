@@ -1,0 +1,18 @@
+@use 'foundation' as *;
+
+.u-arrow {
+    position: relative;
+    padding-right: prem(23.2);
+    &::after {
+        content: '';
+        position: absolute;
+        top: 60%;
+        right:0;
+        transform: translateY(-50%);
+        background-image: url('../images/icon/icon_arrow_right_gr.svg');
+        width:prem(13);
+        height: prem(13);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}

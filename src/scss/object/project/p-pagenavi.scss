@@ -1,0 +1,82 @@
+@use 'foundation' as *;
+
+.p-pagenavi {
+	clear: both;
+	text-align: center;
+    margin-top: prem(25);
+}
+
+.p-pagenavi__inner {
+    padding: 0 prem(20);
+    max-width: prem(200);
+    width: 100%;
+    position: relative;
+    margin: auto;
+    margin-bottom: prem(50);
+    @include mq(md) {
+        max-width: prem(220);
+    }
+}
+
+.p-pagenavi__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 prem(10);
+}
+
+.p-pagenavi .page {
+    font-size: prem(13);
+    line-height: 1;
+	white-space: nowrap;
+    transition: .3s;
+    border: prem(1) solid  $c-black;
+    border-radius: 50%;
+    font-weight: $medium;
+    max-width: prem(27);
+    width: 100%;
+    height: prem(27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:prem(10);
+}
+
+.p-pagenavi .dot {
+    margin: 0 prem(5);
+    font-size: prem(13);
+}
+
+.p-pagenavi .page:hover {
+    opacity: 1;
+    background: $c-gradient;
+}
+
+.p-pagenavi a.active {
+    background: $c-gradient;
+    border:0;
+}
+
+.p-pagenavi .next {
+    border-radius: prem(13);
+    margin-left: prem(20);
+    font-size: prem(13);
+    line-height: 1;
+	white-space: nowrap;
+    transition: .3s;
+    border: prem(1) solid  $c-black;
+    font-weight: $medium;
+    max-width: prem(58);
+    width: 100%;
+    height: prem(27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:prem(10);
+    transition: 0.3s;
+}
+
+.p-pagenavi .next:hover {
+    opacity: 1;
+    background: $c-gradient;
+}

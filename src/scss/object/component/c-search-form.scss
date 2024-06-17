@@ -1,0 +1,49 @@
+@use 'foundation' as *;
+
+.c-search-form {
+    max-width: prem(216);
+}
+
+.c-search-form__input {
+    display: flex;
+    align-items: center;
+    border: prem(1) solid #000000;
+    border-radius: prem(25);
+    width: 100%;
+    height: prem(33.1);   
+    background-color: $c-white;
+}
+
+.c-search-form__input input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.c-search-form__input input::placeholder {
+    color: #707070;
+    font-size: prem(14);
+}
+
+.c-search-form__input label {
+    height:100%;
+}
+
+.c-search-form__input button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding-left: prem(13.4);
+}
+
+.c-search-form__input button::before {
+    width: prem(13.03);
+    height: prem(13.03);
+    background-image: url('../images/icon/icon_glass_bk.svg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    content: '';
+}

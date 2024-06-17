@@ -1,0 +1,21 @@
+@use 'foundation' as *;
+
+.c-tag {
+    max-width: prem(242);
+}
+
+.c-tag__menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap:prem(5) prem(3);
+}
+
+.c-tag__menu-item {
+    padding:prem(6.5) prem(12);
+    color: $c-black;
+    font-weight: $regular;
+    font-size: prem(13);
+    border:prem(1) solid $c-light-gray;
+    background-color: $c-white;
+    border-radius: prem(5);
+}

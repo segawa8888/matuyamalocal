@@ -1,0 +1,15 @@
+@use 'foundation' as *;
+
+.p-top-title {
+    position: relative;
+}
+
+.p-top-title-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: prem(13);
+    color:$c-btn-blue;
+    font-weight: $medium;
+}

@@ -1,0 +1,55 @@
+@use "sass:math";
+
+// ブレイクポイントの設定
+// ＊＊＊＊＊SP・PCファーストについて、この設定を変更します＊＊＊＊＊
+$break-flg: 0 !default; //0:SPファースト、1：PCファースト
+
+$breakpoints: null;
+@if $break-flg == 0 {
+  $breakpoints: (
+    "sm": "screen and (min-width: 400px)",
+    "md": "screen and (min-width: 768px)",
+    "lg": "screen and (min-width: 1000px)",
+    "xl": "screen and (min-width: 1200px)",
+  );
+} @else {
+  // ブレイクポイントの設定
+  $breakpoints: (
+    "sm": "screen and (max-width: 399px)",
+    "md": "screen and (max-width: 767px)",
+    "lg": "screen and (max-width: 999px)",
+    "xl": "screen and (max-width: 1440px)",
+  );
+}
+
+// inner
+$inner: 1002px;
+
+// 余白
+$padding-pc: 16px; // PC用余白設定
+$padding-sp: 16px; // スマホ用余白設定
+
+// フォント
+$font-base: 'Noto Sans JP', sans-serif;
+
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+
+// ベースフォントサイズ
+$base-font-size: 16px;
+
+// Color
+$c-black:#000;
+$c-white:#fff;
+$c-btn-blue:#2196E2;
+$c-deep-blue:#0C33D8;
+$c-gray:#707070;
+$c-strong-gray:#2B2B2B;
+$c-light-gray:#D3D3D3;
+$c-wine-red:#CB4545;
+$c-deep-red:#D80C12;
+$c-orange:#F27E7E;
+$c-gradient:linear-gradient(90deg, rgba(255,165,88,1) 0%, rgba(242,126,126,1) 100%);

@@ -1,0 +1,10 @@
+@use 'foundation' as *;
+
+.p-progressbar {
+    padding-top: prem(32.6);
+    @include mq(md) {
+        max-width: prem(517);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

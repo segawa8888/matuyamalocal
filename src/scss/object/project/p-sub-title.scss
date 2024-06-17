@@ -1,0 +1,10 @@
+@use 'foundation' as *;
+
+.p-sub-title {
+    font-size: prem(16);
+    font-weight:$medium;
+}
+
+.p-sub__title {
+    margin-top: prem(21.5);
+}

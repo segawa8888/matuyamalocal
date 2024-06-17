@@ -1,0 +1,98 @@
+@use 'foundation' as *;
+
+.p-admin-search-form__wrapper {
+    position: relative;
+}
+
+.p-admin-search-form__items {
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: prem(20);
+        grid-template-rows: repeat(3,1fr);
+        row-gap: prem(27);
+    }
+}
+
+.p-admin-search-form__item {
+    z-index: 10;
+}
+
+.p-admin-search-form__item:nth-child(n+2) {
+    margin-top: prem(20);
+    @include mq(md) {
+        margin-top: initial;
+    }
+}
+
+.p-admin-search-form__item label {
+    display: block;
+    font-size: prem(14);
+    font-weight: $medium;
+}
+
+.p-admin-search-form__item input {
+    width:100%;
+    border:prem(1) solid #E5E5E5;
+    border-radius: prem(5);
+    padding:prem(12) prem(15);
+    margin-top: prem(7);
+}
+
+.p-admin-search-form__item select {
+    width:100%;
+    border:prem(1) solid #E5E5E5;
+    border-radius: prem(5);
+    padding:prem(12) prem(15);
+    margin-top: prem(7);
+    background-image: url('../images/icon/icon_arrow_dawn_gr.svg');
+    background-repeat: no-repeat;
+    background-size: prem(12);
+    background-position: right prem(15) top prem(20);
+    appearance: none;
+    cursor: pointer;
+    color: $c-gray;
+    background-color: $c-white;
+}
+
+.p-admin-search-form__item select::-ms-expand {
+    display: none;
+}
+
+.p-admin-search-form__item input::placeholder {
+    font-size: prem(14);
+    font-weight: $regular;
+    color: $c-gray;
+}
+
+.p-admin-search-form__wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    gap:prem(22);
+    margin-top: prem(22);
+    @include mq(md) {
+        margin-top: initial;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        justify-content: right;
+    }
+}
+
+.p-admin-search-form__btn input {
+    background-color: initial;
+    border:none;
+    appearance: none;
+}
+
+.p-admin-search-form__btn {
+    max-width: prem(138);
+    font-weight: $medium;
+    &:nth-child(2) {
+        input {
+            color: $c-black;
+        }
+    }
+}

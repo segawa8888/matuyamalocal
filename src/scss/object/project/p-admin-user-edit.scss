@@ -1,0 +1,37 @@
+@use 'foundation' as *;
+
+.p-admin-user-edit__btn {
+    margin-top: prem(36);
+    font-size: prem(14);
+    background: $c-gradient;
+    color: $c-white;
+    font-weight: $medium;
+    padding:prem(8) prem(18.5);
+    border-radius: prem(10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: prem(184);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-profile__table.p-admin-user-edit__table {
+    tr {
+        display: block;
+    }
+    tr:last-child {
+        td {
+            padding:prem(15) 0 prem(27) prem(27);
+        }
+    }
+    th,td {
+        border:none;
+    }
+    th {
+        padding:prem(25) 0 0 prem(27);
+    }
+    td {
+        padding:prem(15) 0 0 prem(26);
+    }
+}

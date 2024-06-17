@@ -1,0 +1,16 @@
+@use 'foundation' as *;
+
+.c-search-nav.open .c-search-nav-lists {
+    z-index: 999;
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: prem(24) prem(32) prem(34) prem(32);
+    @include mq(md) {
+        padding:prem(33.9) 0 prem(67.9) prem(50.9);
+    }
+}
+
+.c-search-nav-lists {
+    position: relative;
+}

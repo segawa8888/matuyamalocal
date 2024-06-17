@@ -1,0 +1,44 @@
+@use 'foundation' as *;
+
+.p-top__info {
+    margin-top: prem(27);
+    @include mq(md) {
+        margin-top: prem(35);
+    }
+}
+
+.p-top-info__bar a {
+    background: rgb(112,112,112);
+    background: linear-gradient(0deg, rgba(112,112,112,1) 0%, rgba(80,80,80,1) 100%);
+    border-radius: prem(3);
+    color: $c-white;
+    font-size: prem(13);
+    padding:prem(5) prem(13);
+    display: flex;
+    align-items: center;
+    gap:0 prem(11);
+    position: relative;
+    margin-left: prem(16);
+    margin-right: prem(16);
+    span {
+        max-width: prem(20);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width:prem(7.89);
+        height:prem(7.89);
+        top:50%;
+        right: prem(12.6);
+        transform: translateY(-50%);
+        background-image: url('../images/icon/icon_arrow_right_wh.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+}
+
+.p-top-info__bar:nth-child(n+2) {
+    margin-top:prem(7);
+}

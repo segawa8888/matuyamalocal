@@ -1,0 +1,66 @@
+@use 'foundation' as *;
+
+.c-header {
+    width: 100%;
+    height:prem(48);
+    background-color: $c-strong-gray;
+    position: relative;
+    transition: 0.5s;
+    z-index:99;
+    @include mq(md) {
+      max-width: calc(100% - 256px);
+      margin-left: auto;
+    }
+  }
+
+  .c-header.c-header-fixed {
+    position: fixed;
+    @include mq(md) {
+      position: static;
+    }
+  }
+
+  .c-header.c-hidden-header {
+    max-width: 100%;
+  }
+
+  .c-header__wrapper {
+    height: inherit;
+  }
+
+  .c-header__inner {
+    display:flex;
+    justify-content:center;
+    align-items: center; 
+    height: inherit;
+    padding-left: prem(15);
+    padding-right: prem(15);
+    @include mq(md) {
+      padding-left: prem(40);
+      padding-right: prem(40);
+    }
+  }
+
+  .c-header__logo {
+    max-width: prem(160.56);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .c-header__search {
+    max-width: prem(22.1);
+    cursor: pointer;
+  }
+
+  .c-header__click {
+    @include mq(md) {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right:prem(92.9);
+      color: #FF0000;
+      font-size: prem(14);
+      font-weight: $bold;
+    }
+  }

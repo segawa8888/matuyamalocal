@@ -1,0 +1,47 @@
+@use 'foundation' as *;
+
+.p-admin-contents {
+    margin-top: prem(36.9);
+    background-color: $c-white;
+    border-radius: prem(10);
+    padding:prem(24.8) prem(30) prem(28.4) prem(30);
+    box-shadow: 0px prem(3) prem(6) 0px rgba(0, 0, 0, 0.16);
+}
+
+.p-admin-contents__link {
+    text-decoration: underline solid $c-btn-blue;
+    font-size: prem(11);
+    font-weight: $medium;
+    color: $c-btn-blue;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    margin-left: auto;
+    margin-top: prem(19.6);
+    padding-right: prem(20.95);
+    &::after {
+        content: '';
+        background-image: url('../images/icon/icon_arrow_right_bold_blue.svg');
+        width:prem(9.55);
+        height: prem(9.55);
+        background-size: contain;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+    }
+}
+
+.p-admin-contents__sort {
+    margin-top: 0;
+}
+
+.p-admin-contents__sort-result {
+    font-size: prem(14);
+    margin-top: prem(15);
+    font-weight: $regular;
+    color: $c-gray;
+    text-align: right;
+}

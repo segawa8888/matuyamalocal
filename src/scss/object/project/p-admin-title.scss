@@ -1,0 +1,7 @@
+@use 'foundation' as *;
+
+.p-admin-title {
+    font-size: prem(18);
+    font-weight: $bold;
+    white-space: nowrap;
+}

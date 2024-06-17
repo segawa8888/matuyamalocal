@@ -1,0 +1,40 @@
+@use 'foundation' as *;
+
+.c-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: prem(16);
+    padding-right: prem(16);
+    padding-top: prem(13.5);
+    @include mq(md) {
+        padding-top: prem(18.5);
+        padding-left: prem(32);
+    }
+  }
+
+  .c-breadcrumb li {
+    color:#A2A2A2;
+    font-size:prem(13);
+  }
+
+  .c-breadcrumb li:not(:first-of-type) {
+    margin-left: prem(33);
+  }
+
+  .c-breadcrumb li:not(:last-of-type) {
+    position: relative;
+  }
+  
+  .c-breadcrumb li:not(:last-of-type)::after {
+    content: "";
+    width:prem(7.46);
+    height:prem(7.46);
+    position: absolute;
+    right:prem(-22.46);
+    top: 60%;
+    transform: translateY(-50%);
+    background-image: url('../images/icon/icon_arrow_right_gr.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }

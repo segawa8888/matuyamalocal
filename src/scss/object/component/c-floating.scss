@@ -1,0 +1,36 @@
+@use 'foundation' as *;
+
+.c-floating {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s;
+    background-color: $c-black;
+    border-top:prem(1) solid $c-gray;
+    padding:prem(11) 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0 prem(17);
+    z-index:99;
+    width: 100%;
+    @include mq(md) {
+        max-width: calc(100% - 256px);
+        width: 100%;
+        margin-left: auto;
+    }
+  }
+
+  .c-floating.c-hidden-floating {
+    @include mq(md) {
+        max-width:100%;
+    }
+}
+
+  .c-floating__btn {
+    max-width: prem(100);
+    width: 100%;
+    font-size: prem(12);
+    padding:prem(5) prem(10);
+    border-radius: prem(7);
+  }

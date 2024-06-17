@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 電話番号の自動検出と変換を無効にする -->
+  <meta name="format-detection" content="telephone=no" />
+
+  <title>松山ローカル大学</title>
+  <meta name="description" content="トップページの説明" />
+  <meta name="keywords" content="キーワード" />
+
+  <!-- ogp -->
+  <meta property="og:title" content="サイト名" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="サイトのドメイン" />
+  <meta property="og:image" content="OGP IMAGE" />
+  <meta property="og:site_name" content="サイトのドメイン" />
+  <meta property="og:description" content="トップページの説明" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="">
+  <link rel="apple-touch-icon" href="">
+  <!-- CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.css' integrity='sha512-1CRCT9P70z3SktzqL7P8o8YvlmT1nXwFeXLBuVBa4mzQJ4fsvpmsObWooerRi4WzQT8QFrBVz/36mt/XGPYVzw==' crossorigin='anonymous'/>
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/9854922e4c.js" crossorigin="anonymous"></script>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="c-nav-bar u-desktop">
+    <span class="c-nav-bar__drawer --drawer">
+      <img src="../../images/icon/icon_arrow__left_double.svg" alt="drawer">
+    </span>
+    <span class="c-nav-bar__drawer --double">
+      <img src="../../images/icon/icon_drawer.svg" alt="drawer">
+    </span>
+    <span class="c-nav-bar__drawer --close">
+      <img src="../../images/icon/icon_arrow__left_double.svg" alt="close">
+    </span>
+  </div>
+
+  <header class="c-header">
+    <div class="c-header__wrapper">
+      <div class="c-header__inner">
+        <div class="c-nav-bar u-mobile">
+          <span class="c-nav-bar__drawer --drawer">
+            <img src="../../images/icon/icon_drawer.svg" alt="drawer">
+          </span>
+          <span class="c-nav-bar__drawer --close">
+            <img src="../../images/icon/icon_close.svg" alt="close">
+          </span>
+        </div>
+        <h1 class="c-header__logo u-op0">
+          <img src="../../images/common/logo_white.svg" alt="松山ローカル大学">
+        </h1>
+        <div class="c-header__search c-search">
+          <img src="../../images/icon/icon_glass_wh.svg" alt="検索">
+        </div>
+      </div>
+    </div>
+    <nav class="c-nav">
+      <div class="c-nav__logo">
+        <a href="">
+          <img src="../../images/common/logo_wh.svg" alt="松山ローカル大学">
+        </a>
+      </div>
+      <div class="c-nav-general">
+        <div class="c-nav-general__menu">
+          <a href="">
+            <span class="c-nav-general__icon">
+              <img src="../../images/icon/icon_home.svg" alt="home">
+            </span>
+            <p>ホーム</p>
+          </a>
+        </div>
+        <div class="c-nav-general__menu">
+          <a href="javascript:void(0)" class="c-nav-general__link js-c-nav-accordion">
+            <span class="c-nav-general__icon">
+              <img src="../../images/icon/icon_library.svg" alt="library">
+            </span>
+            <p>マイライブラリ</p>
+          </a>
+          <div class="c-nav-general__content js-c-nav-accordion-content">
+            <a href="">閲覧履歴</a>
+            <a href="">あとでみる</a>
+          </div>
+        </div>
+        <div class="c-nav-general__menu --has-border">
+          <a href="javascript:void(0)" class="c-nav-general__link js-c-nav-accordion">
+            <span class="c-nav-general__icon">
+              <img src="../../images/icon/icon_youtube.svg" alt="youtube">
+            </span>
+            <p>動画一覧</p>
+          </a>
+          <div class="c-nav-general__content js-c-nav-accordion-content">
+            <a href="">講義動画</a>
+            <a href="">ゼミ動画</a>
+            <a href="">DX特別講座</a>
+          </div>
+        </div>
+        <div class="c-nav-general__menu">
+          <a href="">
+            <span class="c-nav-general__icon">
+              <img src="../../images/icon/icon_article.svg" alt="article">
+            </span>
+            <p>記事一覧</p>
+          </a>
+        </div>
+        <div class="c-nav-general__menu">
+          <a href="">
+            <span class="c-nav-general__icon">
+              <img src="../../images/icon/icon_mike.svg" alt="mike">
+            </span>
+            <p>講義一覧</p>
+          </a>
+        </div>
+      </div>
+      <div class="c-nav-footer">
+        <div class="c-nav-footer__menu">
+          <a href="">
+            会社概要
+          </a>
+        </div>
+        <div class="c-nav-footer__menu">
+          <a href="">
+            特定商取引法に基づく表記
+          </a>
+        </div>
+        <div class="c-nav-footer__menu">
+          <a href="">
+            利用規約
+          </a>
+        </div>
+        <div class="c-nav-footer__menu">
+          <a href="">
+            プライバシーポリシー
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="c-search-nav">
+      <div class="c-search-nav-lists">
+        <div class="c-search-form">
+          <form action="#" class="c-search-form__input">
+            <button type="submit" aria-label="検索"></button>
+            <label>
+                <input type="text" placeholder="キーワードを入力">
+            </label>
+        </form>
+        </div>
+        <div class="c-serach-nav__close c-search">
+          <img src="../../images/icon/icon_close_bk.svg" alt="close">
+        </div>
+        <div class="c-search-nav-list">
+          <p class="c-search-nav-list__title">動画</p>
+          <ul class="c-search-nav-list__tags">
+            <li class="c-search-nav-list__tag">
+              <a href="">ビジネス</a>
+            </li>
+            <li class="c-search-nav-list__tag">
+              <a href="">顧客管理</a>
+            </li>
+            <li class="c-search-nav-list__tag">
+              <a href="">業務自動化</a>
+            </li>
+            <li class="c-search-nav-list__tag">
+              <a href="">人材マッチング</a>
+            </li>
+            <li class="c-search-nav-list__tag">
+              <a href="">DX特別講座　無料</a>
+            </li>
+          </ul>
+        </div>
+        <div class="c-search-nav-list">
+          <p class="c-search-nav-list__title">講義</p>
+          <ul class="c-search-nav-list__tags">
+            <li class="c-search-nav-list__tag">
+              <a href="">ビジネス</a>
+            </li>
+            <li class="c-search-nav-list__tag">
+              <a href="">顧客管理</a>
+            </li>
+            <li class="c-search-nav-list__tag">
+              <a href="">業務自動化</a>
+            </li>
+            <li class="c-search-nav-list__tag">
+              <a href="">人材マッチング</a>
+            </li>
+            <li class="c-search-nav-list__tag">
+              <a href="">DX特別講座　無料</a>
+            </li>
+          </ul>
+        </div>
+        <div class="c-search-nav-list">
+          <p class="c-search-nav-list__title">記事</p>
+          <ul class="c-search-nav-list__tags">
+            <li class="c-search-nav-list__tag">
+              <a href="">ビジネス</a>
+            </li>
+            <li class="c-search-nav-list__tag">
+              <a href="">顧客管理</a>
+            </li>
+            <li class="c-search-nav-list__tag">
+              <a href="">業務自動化</a>
+            </li>
+            <li class="c-search-nav-list__tag">
+              <a href="">人材マッチング</a>
+            </li>
+            <li class="c-search-nav-list__tag">
+              <a href="">DX特別講座　無料</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+  </header>
+
+  <main class="c-main">
+    <div class="c-main-inner">
+      <div class="p-top-mv swiper">
+        <div class="p-top-mv__wrapper swiper-wrapper">
+          <div class="p-top-mv__slide swiper-slide">
+            <a href="">
+              <picture>
+                <source srcset="../../images/video/succeed-in-their-40s_pc.jpg" media="(min-width:768px)"/>
+                <img src="../../images/video/succeed-in-their-40s_sp.jpg" alt="松山ローカル大学">
+              </picture>
+            </a>
+          </div>
+          <div class="p-top-mv__slide swiper-slide">
+            <a href="">
+              <picture>
+                <source srcset="../../images/video/succeed-in-their-40s_pc.jpg" media="(min-width:768px)"/>
+                <img src="../../images/video/succeed-in-their-40s_sp.jpg" alt="松山ローカル大学">
+              </picture>
+            </a>
+          </div>
+          <div class="p-top-mv__slide swiper-slide">
+            <a href="">
+              <picture>
+                <source srcset="../../images/video/succeed-in-their-40s_pc.jpg" media="(min-width:768px)"/>
+                <img src="../../images/video/succeed-in-their-40s_sp.jpg" alt="松山ローカル大学">
+              </picture>
+            </a>
+          </div>
+          <div class="p-top-mv__slide swiper-slide">
+            <a href="">
+              <picture>
+                <source srcset="../../images/video/succeed-in-their-40s_pc.jpg" media="(min-width:768px)"/>
+                <img src="../../images/video/succeed-in-their-40s_sp.jpg" alt="松山ローカル大学">
+              </picture>
+            </a>
+          </div>
+        </div>
+        <div class="p-top-mv__pagination swiper-pagination"></div>
+      </div>
+  
+      <div class="p-top-info p-top__info">
+        <p class="p-top-info__bar">
+          <a href="">
+            <span>
+              <img src="../../images/icon/icon_Information.png" alt="information">
+            </span>
+            【重要】お知らせの内容が入ります。
+          </a>
+        </p>
+        <p class="p-top-info__bar">
+          <a href="">
+            <span>
+              <img src="../../images/icon/icon_Information.png" alt="information">
+            </span>
+            【重要】お知らせの内容が入ります。
+          </a>
+        </p>
+      </div>
+  
+      <section class="l-section">
+        <p class="c-title p-top-title">講義動画
+          <a href="" class="p-top-title-btn u-mobile">すべて見る</a>
+        </p>
+        <div class="c-tab p-top-tab">
+          <ul class="c-tab__menu">
+            <li class="c-tab__menu-item" >
+              <input type="radio" checked id="01" name="c-tab"><label for="01">All [151]</label>
+            </li>
+            <li class="c-tab__menu-item" >
+              <input type="radio" id="02" name="c-tab"><label for="02">地方創生 [151]</label>
+            </li>
+            <li class="c-tab__menu-item" >
+              <input type="radio" id="03" name="c-tab"><label for="03">マーケティング [151]</label>
+            </li>
+            <li class="c-tab__menu-item" >
+              <input type="radio" id="04" name="c-tab"><label for="04">EC [151]</label>
+            </li>
+            <li class="c-tab__menu-item" >
+              <input type="radio" id="05" name="c-tab"><label for="05">経営／マネジメント [151]</label>
+            </li>
+          </ul>
+          <a href="" class="p-top-tab-btn u-desktop">すべて見る</a>
+        </div>
+  
+        <div class="p-top-video">
+          <div class="p-top-video__swiper swiper">
+            <ul class="p-top-video__list p-top-video-list swiper-wrapper">
+              <li class="p-top-video-list__item swiper-slide">
+                  <div class="p-top-video-list__item-img">
+                    <a href="">
+                      <div class="p-top-video-list__item-labels">
+                        <span class="p-top-video-list__item-label --new">new</span>
+                      </div>
+                      <img src="../../images/video/sharp-strikes-back.png" alt="シャープ">
+                    </a>
+                  </div>
+                  <div class="p-top-video-list__item-content">
+                    <p class="p-top-video-list__item-title">【地方に女性役員を増やすためには】</p>
+                    <p class="p-top-video-list__item-text">大塚 泰子 / 山田 太郎</p>
+                  </div>
+                  <ul class="p-top-video-list__item-tag">
+                    <li><a href="">地方創生</a></li>
+                    <li><a href="">マーケティング</a></li>
+                    <li><a href="">EC</a></li>
+                    <li><a href="">経営</a></li>
+                    <li><a href="">マネジメント</a></li>
+                  </ul>
+              </li>
+              <li class="p-top-video-list__item swiper-slide">
+                <div class="p-top-video-list__item-img">
+                 <a href=""> <img src="../../images/video/scientific-parenting.png" alt="科学的"></a>
+                </div>
+                <div class="p-top-video-list__item-content">
+                  <p class="p-top-video-list__item-title">【地方に女性役員を増やすためには】大塚 泰子</p>
+                  <p class="p-top-video-list__item-text">大塚 泰子</p>
+                </div>
+                <ul class="p-top-video-list__item-tag">
+                  <li><a href="">地方創生</a></li>
+                  <li><a href="">マーケティング</a></li>
+                  <li><a href="">EC</a></li>
+                  <li><a href="">経営</a></li>
+                  <li><a href="">マネジメント</a></li>
+                </ul>
+            </li>
+              <li class="p-top-video-list__item swiper-slide">
+                <div class="p-top-video-list__item-img">
+                  <a href="">
+                    <img src="../../images/video/minimum-session-upload-method.png" alt="マイクロソフト">
+                  </a>
+                </div>
+                <div class="p-top-video-list__item-content">
+                  <p class="p-top-video-list__item-title">【地方に女性役員を増やすためには】大塚 泰子</p>
+                  <p class="p-top-video-list__item-text">大塚 泰子</p>
+                </div>
+                <ul class="p-top-video-list__item-tag">
+                  <li><a href="">地方創生</a></li>
+                  <li><a href="">マーケティング</a></li>
+                  <li><a href="">EC</a></li>
+                  <li><a href="">経営</a></li>
+                  <li><a href="">マネジメント</a></li>
+                </ul>
+            </li>
+            </ul>
+            <div class="swiper-button-prev p-top-video-swiper-arrow p-top-video-swiper-prev">
+              <img src="../../images/icon/icon_arrow_left_bk.svg" alt="arrow">
+            </div>
+            <div class="swiper-button-next p-top-video-swiper-arrow p-top-video-swiper-next">
+              <img src="../../images/icon/icon_arrow_right_bk.svg" alt="arrow">
+            </div>
+          </div>
+        </div>
+  
+      </section>
+  
+      <section class="l-section">
+        <p class="c-title p-top-title">ゼミ動画
+          <a href="" class="p-top-title-btn u-mobile">すべて見る</a>
+        </p>
+        <div class="c-tab p-top-tab">
+          <ul class="c-tab__menu">
+            <li class="c-tab__menu-item" >
+              <input type="radio" checked id="06" name="c-tab02"><label for="06">All [151]</label>
+            </li>
+            <li class="c-tab__menu-item" >
+              <input type="radio" id="07" name="c-tab02"><label for="07">地方創生 [151]</label>
+            </li>
+            <li class="c-tab__menu-item" >
+              <input type="radio" id="08" name="c-tab02"><label for="08">マーケティング [151]</label>
+            </li>
+            <li class="c-tab__menu-item" >
+              <input type="radio" id="09" name="c-tab02"><label for="09">EC [151]</label>
+            </li>
+            <li class="c-tab__menu-item" >
+              <input type="radio" id="10" name="c-tab02"><label for="10">経営／マネジメント [151]</label>
+            </li>
+          </ul>
+          <a href="" class="p-top-tab-btn u-desktop">すべて見る</a>
+        </div>
+  
+        <div class="p-top-video">
+          <div class="p-top-video__swiper swiper">
+            <ul class="p-top-video__list p-top-video-list swiper-wrapper">
+              <li class="p-top-video-list__item swiper-slide">
+                  <div class="p-top-video-list__item-img">
+                    <a href="">
+                      <div class="p-top-video-list__item-labels">
+                        <span class="p-top-video-list__item-label --new">new</span>
+                      </div>
+                      <img src="../../images/video/sharp-strikes-back.png" alt="シャープ">
+                    </a>
+                  </div>
+                  <div class="p-top-video-list__item-content">
+                    <p class="p-top-video-list__item-title">【地方に女性役員を増やすためには】</p>
+                    <p class="p-top-video-list__item-text">大塚 泰子 / 山田 太郎</p>
+                  </div>
+                  <ul class="p-top-video-list__item-tag">
+                    <li><a href="">地方創生</a></li>
+                    <li><a href="">マーケティング</a></li>
+                    <li><a href="">EC</a></li>
+                    <li><a href="">経営</a></li>
+                    <li><a href="">マネジメント</a></li>
+                  </ul>
+              </li>
+              <li class="p-top-video-list__item swiper-slide">
+                <div class="p-top-video-list__item-img">
+                 <a href=""> <img src="../../images/video/scientific-parenting.png" alt="科学的"></a>
+                </div>
+                <div class="p-top-video-list__item-content">
+                  <p class="p-top-video-list__item-title">【地方に女性役員を増やすためには】大塚 泰子</p>
+                  <p class="p-top-video-list__item-text">大塚 泰子</p>
+                </div>
+                <ul class="p-top-video-list__item-tag">
+                  <li><a href="">地方創生</a></li>
+                  <li><a href="">マーケティング</a></li>
+                  <li><a href="">EC</a></li>
+                  <li><a href="">経営</a></li>
+                  <li><a href="">マネジメント</a></li>
+                </ul>
+            </li>
+              <li class="p-top-video-list__item swiper-slide">
+                <div class="p-top-video-list__item-img">
+                  <a href="">
+                    <img src="../../images/video/minimum-session-upload-method.png" alt="マイクロソフト">
+                  </a>
+                </div>
+                <div class="p-top-video-list__item-content">
+                  <p class="p-top-video-list__item-title">【地方に女性役員を増やすためには】大塚 泰子</p>
+                  <p class="p-top-video-list__item-text">大塚 泰子</p>
+                </div>
+                <ul class="p-top-video-list__item-tag">
+                  <li><a href="">地方創生</a></li>
+                  <li><a href="">マーケティング</a></li>
+                  <li><a href="">EC</a></li>
+                  <li><a href="">経営</a></li>
+                  <li><a href="">マネジメント</a></li>
+                </ul>
+            </li>
+            </ul>
+            <div class="swiper-button-prev p-top-video-swiper-arrow p-top-video-swiper-prev">
+              <img src="../../images/icon/icon_arrow_left_bk.svg" alt="arrow">
+            </div>
+            <div class="swiper-button-next p-top-video-swiper-arrow p-top-video-swiper-next">
+              <img src="../../images/icon/icon_arrow_right_bk.svg" alt="arrow">
+            </div>
+          </div>
+        </div>
+  
+      </section>
+  
+      <section class="l-section">
+        <p class="c-title p-top-title">DX特別講座動画
+          <a href="" class="p-top-title-btn u-mobile">すべて見る</a>
+        </p>
+        <div class="c-tab p-top-tab">
+          <ul class="c-tab__menu">
+            <li class="c-tab__menu-item" >
+              <input type="radio" checked id="11" name="c-tab03"><label for="11">All [151]</label>
+            </li>
+            <li class="c-tab__menu-item" >
+              <input type="radio" id="12" name="c-tab03"><label for="12">地方創生 [151]</label>
+            </li>
+            <li class="c-tab__menu-item" >
+              <input type="radio" id="13" name="c-tab03"><label for="13">マーケティング [151]</label>
+            </li>
+            <li class="c-tab__menu-item" >
+              <input type="radio" id="14" name="c-tab03"><label for="14">EC [151]</label>
+            </li>
+            <li class="c-tab__menu-item" >
+              <input type="radio" id="15" name="c-tab03"><label for="15">経営／マネジメント [151]</label>
+            </li>
+          </ul>
+          <a href="" class="p-top-tab-btn u-desktop">すべて見る</a>
+        </div>
+  
+        <div class="p-top-video">
+          <div class="p-top-video__swiper swiper">
+            <ul class="p-top-video__list p-top-video-list swiper-wrapper">
+              <li class="p-top-video-list__item swiper-slide">
+                  <div class="p-top-video-list__item-img">
+                    <a href="">
+                      <div class="p-top-video-list__item-labels">
+                        <span class="p-top-video-list__item-label --new">new</span>
+                        <span class="p-top-video-list__item-label --free">free</span>
+                      </div>
+                      <div class="p-top-video-list__item-labels">
+                        <span class="p-top-video-list__item-label --new">new</span>
+                        <span class="p-top-video-list__item-label --free">free</span>
+                      </div>
+                      <img src="../../images/video/sharp-strikes-back.png" alt="シャープ">
+                    </a>
+                  </div>
+                  <div class="p-top-video-list__item-content">
+                    <p class="p-top-video-list__item-title">【地方に女性役員を増やすためには】</p>
+                    <p class="p-top-video-list__item-text">大塚 泰子 / 山田 太郎</p>
+                  </div>
+                  <ul class="p-top-video-list__item-tag">
+                    <li><a href="">地方創生</a></li>
+                    <li><a href="">マーケティング</a></li>
+                    <li><a href="">EC</a></li>
+                    <li><a href="">経営</a></li>
+                    <li><a href="">マネジメント</a></li>
+                  </ul>
+              </li>
+              <li class="p-top-video-list__item swiper-slide">
+                <div class="p-top-video-list__item-img">
+                 <a href="">
+                  <div class="p-top-video-list__item-labels">
+                    <span class="p-top-video-list__item-label --free">free</span>
+                  </div>
+                  <div class="p-top-video-list__item-labels">
+                    <span class="p-top-video-list__item-label --free">free</span>
+                  </div>
+                  <img src="../../images/video/scientific-parenting.png" alt="科学的">
+                </a>
+                </div>
+                <div class="p-top-video-list__item-content">
+                  <p class="p-top-video-list__item-title">【地方に女性役員を増やすためには】大塚 泰子</p>
+                  <p class="p-top-video-list__item-text">大塚 泰子</p>
+                </div>
+                <ul class="p-top-video-list__item-tag">
+                  <li><a href="">地方創生</a></li>
+                  <li><a href="">マーケティング</a></li>
+                  <li><a href="">EC</a></li>
+                  <li><a href="">経営</a></li>
+                  <li><a href="">マネジメント</a></li>
+                </ul>
+            </li>
+              <li class="p-top-video-list__item swiper-slide">
+                <div class="p-top-video-list__item-img">
+                  <a href="">
+                    <div class="p-top-video-list__item-labels">
+                      <span class="p-top-video-list__item-label --free">free</span>
+                    </div>
+                    <img src="../../images/video/minimum-session-upload-method.png" alt="マイクロソフト">
+                  </a>
+                </div>
+                <div class="p-top-video-list__item-content">
+                  <p class="p-top-video-list__item-title">【地方に女性役員を増やすためには】大塚 泰子</p>
+                  <p class="p-top-video-list__item-text">大塚 泰子</p>
+                </div>
+                <ul class="p-top-video-list__item-tag">
+                  <li><a href="">地方創生</a></li>
+                  <li><a href="">マーケティング</a></li>
+                  <li><a href="">EC</a></li>
+                  <li><a href="">経営</a></li>
+                  <li><a href="">マネジメント</a></li>
+                </ul>
+            </li>
+            </ul>
+            <div class="swiper-button-prev p-top-video-swiper-arrow p-top-video-swiper-prev">
+              <img src="../../images/icon/icon_arrow_left_bk.svg" alt="arrow">
+            </div>
+            <div class="swiper-button-next p-top-video-swiper-arrow p-top-video-swiper-next">
+              <img src="../../images/icon/icon_arrow_right_bk.svg" alt="arrow">
+            </div>
+          </div>
+        </div>
+  
+      </section>
+  
+      <section class="l-section">
+        <p class="c-title p-top-title">記事
+          <a href="" class="p-top-title-btn">すべて見る</a>
+        </p>
+  
+        <div class="p-top-video">
+          <div class="p-top-video__swiper swiper swiper02">
+            <ul class="p-top-video__list p-top-video-list swiper-wrapper">
+              <li class="p-top-video-list__item swiper-slide">
+                <a href="">
+                  <div class="p-top-video-list__item-img">
+                    <div class="p-top-video-list__item-labels">
+                      <span class="p-top-video-list__item-label --new">new</span>
+                    </div>
+                      <img src="../../images/video/tatenaga01.png" alt="シャープ">
+                  </div>
+                  <div class="p-top-video-list__item-content">
+                    <p class="p-top-video-list__item-title">【地方に女性役員を増やすためには】</p>
+                    <p class="p-top-video-list__item-text">記事の内容が入ります。記事の内容が入ります。記事の内容が入ります。</p>
+                  </div>
+                </a>
+              </li>
+              <li class="p-top-video-list__item swiper-slide">
+                <a href="">
+                  <div class="p-top-video-list__item-img">
+                      <img src="../../images/video/tatenaga02.png" alt="シャープ">
+                  </div>
+                  <div class="p-top-video-list__item-content">
+                    <p class="p-top-video-list__item-title">【地方に女性役員を増やすためには】</p>
+                    <p class="p-top-video-list__item-text">記事の内容が入ります。記事の内容が入ります。記事の内容が入ります。</p>
+                  </div>
+                </a>
+              </li>
+              <li class="p-top-video-list__item swiper-slide">
+                <a href="">
+                  <div class="p-top-video-list__item-img">
+                      <img src="../../images/video/tatenaga03.png" alt="シャープ">
+                  </div>
+                  <div class="p-top-video-list__item-content">
+                    <p class="p-top-video-list__item-title">【地方に女性役員を増やすためには】</p>
+                    <p class="p-top-video-list__item-text">記事の内容が入ります。記事の内容が入ります。記事の内容が入ります。</p>
+                  </div>
+                </a>
+              </li>
+              <li class="p-top-video-list__item swiper-slide">
+                <a href="">
+                  <div class="p-top-video-list__item-img">
+                      <img src="../../images/video/tatenaga04.png" alt="シャープ">
+                  </div>
+                  <div class="p-top-video-list__item-content">
+                    <p class="p-top-video-list__item-title">【地方に女性役員を増やすためには】</p>
+                    <p class="p-top-video-list__item-text">記事の内容が入ります。記事の内容が入ります。記事の内容が入ります。</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="swiper-button-prev p-top-video-swiper-arrow p-top-video-swiper-prev">
+              <img src="../../images/icon/icon_arrow_left_bk.svg" alt="arrow">
+            </div>
+            <div class="swiper-button-next p-top-video-swiper-arrow p-top-video-swiper-next">
+              <img src="../../images/icon/icon_arrow_right_bk.svg" alt="arrow">
+            </div>
+          </div>
+        </div>
+  
+      </section>
+  
+      <section class="l-section u-bg-white">
+        <p class="c-title p-top-title">講義
+          <a href="" class="p-top-title-btn">すべて見る</a>
+        </p>
+  
+        <div class="p-top-video">
+          <div class="p-top-video__swiper swiper">
+            <ul class="p-top-video__list p-top-video-list swiper-wrapper">
+              <li class="p-top-video-list__item swiper-slide">
+                  <div class="p-top-video-list__item-img">
+                    <a href="">
+                      <img src="../../images/seminar/meeting_20231018.jpg" alt="公開ディスカッション">
+                    </a>
+                  </div>
+                  <div class="p-top-video-list__item-content__bg-white">
+                    <span class="p-top-video__label --primary">受付中</span>
+                    <p class="p-top-video-list__item-title">【地方に女性役員を増やすためには】大塚 泰子 / 山田 太郎</p>
+                    <p class="p-top-video-list__item-text u-flex">
+                      <span>
+                        <img src="../../images/icon/icon_date.svg" alt="date">
+                      </span>
+                      2023/10/18　18:30-
+                    </p>
+                    <p class="p-top-video-list__item-text u-flex">
+                      <span>
+                        <img src="../../images/icon/icon_place.svg" alt="place">
+                      </span>
+                      コワーキングスペース「BEARCH（ビアーチ）」
+                    </p>
+                  </div>
+              </li>
+              <li class="p-top-video-list__item swiper-slide">
+                <div class="p-top-video-list__item-img">
+                  <a href="">
+                    <img src="../../images/seminar/community-development_20231018.jpg" alt="公開ディスカッション">
+                  </a>
+                </div>
+                <div class="p-top-video-list__item-content__bg-white">
+                  <span class="p-top-video__label --base">終了</span>
+                  <p class="p-top-video-list__item-title">【地方に女性役員を増やすためには】大塚 泰子 / 山田 太郎</p>
+                  <p class="p-top-video-list__item-text u-flex">
+                    <span>
+                      <img src="../../images/icon/icon_date.svg" alt="date">
+                    </span>
+                    2023/10/18　18:30-
+                  </p>
+                  <p class="p-top-video-list__item-text u-flex">
+                    <span>
+                      <img src="../../images/icon/icon_place.svg" alt="place">
+                    </span>
+                    コワーキングスペース「BEARCH（ビアーチ）」
+                  </p>
+                </div>
+            </li>
+            <li class="p-top-video-list__item swiper-slide">
+              <div class="p-top-video-list__item-img">
+                <a href="">
+                  <img src="../../images/seminar/internet-strategies-for-local-companies.jpg" alt="公開ディスカッション">
+                </a>
+              </div>
+              <div class="p-top-video-list__item-content__bg-white">
+                <span class="p-top-video__label --primary">受付中</span>
+                <p class="p-top-video-list__item-title">【地方に女性役員を増やすためには】大塚 泰子 / 山田 太郎</p>
+                <p class="p-top-video-list__item-text u-flex">
+                  <span>
+                    <img src="../../images/icon/icon_date.svg" alt="date">
+                  </span>
+                  2023/10/18　18:30-
+                </p>
+                <p class="p-top-video-list__item-text u-flex">
+                  <span>
+                    <img src="../../images/icon/icon_place.svg" alt="place">
+                  </span>
+                  コワーキングスペース「BEARCH（ビアーチ）」
+                </p>
+              </div>
+          </li>
+            </ul>
+            <div class="swiper-button-prev p-top-video-swiper-arrow p-top-video-swiper-prev">
+              <img src="../../images/icon/icon_arrow_left_bk.svg" alt="arrow">
+            </div>
+            <div class="swiper-button-next p-top-video-swiper-arrow p-top-video-swiper-next">
+              <img src="../../images/icon/icon_arrow_right_bk.svg" alt="arrow">
+            </div>
+          </div>
+        </div>
+  
+      </section>
+    </div>
+  </main>
+
+  <footer class="c-footer">
+    <div class="c-footer__wrapper">
+      <div class="c-footer__inner">
+        <div class="c-footer__content">
+          <div class="c-footer__icons">
+            <div class="c-footer__icon">
+              <a href="" target="_blank">
+                <img src="../../images/icon/icon_facebook.svg" alt="facebook">
+              </a>
+            </div>
+            <div class="c-footer__icon">
+              <a href="" target="_blank">
+                <img src="../../images/icon/icon_Instagram.svg" alt="Instagram">
+              </a>
+            </div>
+            <div class="c-footer__icon">
+              <a href="" target="_blank">
+                <img src="../../images/icon/icon_x.svg" alt="Twitter（x）">
+              </a>
+            </div>
+            <div class="c-footer__icon">
+              <a href="" target="_blank">
+                <img src="../../images/icon/icon_youtube.svg" alt="youtube">
+              </a>
+            </div>
+          </div>
+          <div class="c-footer__logo">
+            <a href="">
+              <img src="../../images/common/logo_white.svg" alt="松山ローカル大学">
+            </a>
+          </div>
+          <p class="c-footer__copyright">©2023 Local Univercity Inc. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.js' integrity='sha512-/LKHQ9K9yatyOfEKXiysc9SPCpF6xkvfHQxtPkhdKS83GvfyIWDwKaOr3/LqVxbEX89Bqz+SbMHEPWm0AeRWnA==' crossorigin='anonymous'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="../../js/script.js"></script>
+</body>
+</html>

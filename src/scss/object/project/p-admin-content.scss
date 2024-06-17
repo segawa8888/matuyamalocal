@@ -1,0 +1,79 @@
+@use 'foundation' as *;
+
+.p-admin-content {
+    margin-top: prem(22.1);
+}
+
+.p-admin-content__boxes {
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: prem(20.3);
+    }
+}
+
+.p-admin-content__box {
+    background-color: #F1F1F1;
+    border-radius: prem(6);
+    text-align: center;
+    padding:prem(21) 0;
+    @include mq(md) {
+        min-height: prem(167.36);
+        padding: 0;
+    }
+}
+
+.p-admin-content__box:nth-child(n+2) {
+    margin-top: prem(20);
+    @include mq(md) {
+        margin-top: initial;
+    }
+}
+
+.p-admin-content__title {
+    font-size: prem(11);
+    font-weight: $medium;
+    @include mq(md) {
+        padding-top: prem(21);
+    }
+}
+
+.p-admin-content__member {
+    font-size: prem(18);
+    font-weight: $bold;
+    margin-top: prem(27.6);
+    strong {
+        font-size: prem(40);
+        font-weight: 900;
+    }
+}
+
+.p-admin-content__percent {
+    font-size: prem(13);
+    font-weight: $medium;
+}
+
+.p-admin-content__percent.--blue {
+    color: $c-btn-blue;
+}
+
+.p-admin-content__percent.--orange {
+    color: $c-orange;
+}
+
+.p-admin__meter {
+    max-width: prem(219.4);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap:0 prem(7.7);
+    font-size: prem(11);
+    font-weight: $medium;
+    margin-top: prem(17.1);
+    flex-wrap: wrap;
+    justify-content: center;
+    span {
+        max-width: prem(165.72);
+    }
+}

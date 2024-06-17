@@ -1,0 +1,26 @@
+@use 'foundation' as *;
+
+.p-video-tag {
+    margin-top: prem(15.6);
+    overflow: auto hidden;
+}
+
+.p-video-tag__menu {
+    display: flex;
+    align-items: center;
+    gap:0 prem(6.6);
+    white-space: nowrap;
+    @include mq(md) {
+        gap:0 prem(13);
+    }
+}
+
+.p-video-tag__menu-item a  {
+    border-radius: prem(20);
+    color: #3A3952;
+    font-weight: $medium;
+    font-size: prem(14);
+    padding:prem(8.5) prem(17);
+    display: inline-block;
+    border: prem(1) solid $c-light-gray;
+}

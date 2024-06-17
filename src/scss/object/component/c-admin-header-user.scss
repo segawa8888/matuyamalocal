@@ -1,0 +1,9 @@
+@use 'foundation' as *;
+
+.c-admin-header-user__name {
+    font-size: prem(12);
+    font-weight: $medium;
+    @include mq(md) {
+        font-size: prem(16);
+    }
+}

@@ -1,0 +1,53 @@
+@use 'foundation' as *;
+
+.c-nav {
+    top: 0;
+    left:prem(-256);
+    min-width:prem(256);
+    height:100vh;
+    background-color:$c-black;
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: prem(300);
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    transform: translateX(0px);
+    transition: 0.5s;
+    overflow: hidden auto;
+    padding-bottom: prem(80);
+    @include mq(md) {
+        min-width:prem(256);
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding-bottom: initial;
+    }
+}
+
+.c-nav.c-hidden-nav {
+    left:0;
+    @include mq(md) {
+        left:prem(-256);
+    }
+}
+
+.c-nav__logo {
+    max-width: prem(200);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:prem(32);
+}
+
+.c-nav__register {
+    margin-top: prem(32);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+        &:nth-child(n+2) {
+            margin-top: prem(14);
+        }
+    }
+}

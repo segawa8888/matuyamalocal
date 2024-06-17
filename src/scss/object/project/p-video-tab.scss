@@ -1,0 +1,38 @@
+@use 'foundation' as *;
+
+.p-video-tab {
+    overflow: auto hidden;
+    padding-bottom: prem(20);
+}
+
+.p-video-tab__menu {
+    margin-top: prem(18.5);
+    display: flex;
+    align-items: center;
+    gap:0 prem(11);
+    white-space: nowrap;
+    @include mq(md) {
+        margin-top: prem(30);
+    }
+}
+
+.p-video-tab__menu-item a {
+    font-size: prem(14);
+    color: $c-black;
+    border-radius: prem(20);
+    padding:prem(10) prem(25) prem(10) prem(15);
+    position: relative;
+    border: prem(1) solid $c-light-gray;
+    &::after {
+        content: '';
+        position: absolute;
+        right: prem(3.7);
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url('../images/icon/icon_arrow_right_bk.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width:prem(10.29);
+        height: prem(10.29);
+    }
+}

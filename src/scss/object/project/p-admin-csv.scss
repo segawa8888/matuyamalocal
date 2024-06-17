@@ -1,0 +1,33 @@
+@use 'foundation' as *;
+
+.p-admin-csv {
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.p-admin-csv__btn {
+    @include mq(md) {
+        margin-left: prem(64);
+        display: flex;
+        align-items: center;
+        gap:0 prem(25);
+        width: 100%;
+    }
+}
+
+.p-admin-csv__btn a {
+    display: block;
+    width: 100%;
+    padding:prem(6) 0;
+    text-align: center;
+    font-weight: $medium;
+    font-size: prem(16);
+    margin-top: prem(15);
+    @include mq(md) {
+        max-width: prem(230);
+        margin-top: initial;
+    }
+}

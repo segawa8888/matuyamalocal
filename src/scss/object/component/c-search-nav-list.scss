@@ -1,0 +1,32 @@
+@use 'foundation' as *;
+
+.c-search-nav-list {
+    margin-top: prem(30.4);
+    max-width: prem(312.19);
+    @include mq(md) {
+        max-width: 100%;
+    }
+}
+
+.c-search-nav-list__title {
+    font-size: prem(16);
+    line-height: calc(30/16);
+    color: $c-black;
+    font-weight: $bold;
+}
+
+.c-search-nav-list__tags {
+    margin-top: prem(15.9);
+    display: flex;
+    flex-wrap:wrap;
+    gap:prem(8);
+}
+
+.c-search-nav-list__tag {
+    padding:prem(6) prem(12.5);
+    font-size: prem(16);
+    color: $c-white;
+    font-weight: $medium;
+    background-color: $c-btn-blue;
+    border-radius: prem(14);
+}

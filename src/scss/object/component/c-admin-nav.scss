@@ -1,0 +1,41 @@
+@use 'foundation' as *;
+
+.c-admin-nav {
+    top: 0;
+    left:prem(-256);
+    min-width:prem(256);
+    height:100vh;
+    background-color:$c-white;
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: prem(300);
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    transform: translateX(0px);
+    transition: 0.5s;
+    overflow: hidden auto;
+    padding:prem(27.8) 0;
+    box-shadow: 0px prem(3) prem(6) 0px rgba(0, 0, 0, 0.16);
+    @include mq(md) {
+        min-width:prem(256);
+        justify-content: center;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+.c-admin-nav.c-hidden-admin-nav {
+    left:0;
+    @include mq(md) {
+        left:prem(-256);
+    }
+}
+
+.c-admin-nav__logo {
+    max-width: prem(180);
+    margin-left: auto;
+    margin-right: auto;
+}

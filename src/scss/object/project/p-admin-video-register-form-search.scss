@@ -1,0 +1,111 @@
+@use 'foundation' as *;
+
+.p-admin-video-register-form__item {
+    margin-top: prem(36);
+}
+
+.p-admin-video-register-form__item:nth-child(n+2) {
+    margin-top: prem(46);
+}
+
+.p-admin-video-register-form-search__title {
+    font-size: prem(14);
+    font-weight: $bold;
+}
+
+.p-admin-video-register-form-search {
+    border: prem(1) solid #E5E5E5;
+    margin-top: prem(12);
+    border-radius: prem(5);
+}
+
+.p-admin-video-register-form-search__content {
+    border: prem(1) solid #E5E5E5;
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:prem(11) prem(14) prem(11) prem(21);
+    }
+}
+
+.p-admin-video-register-form-search__box {
+    @include mq(md) {
+        max-width: 50%;
+        width: 100%;
+    }
+
+    input {
+        padding: prem(8) prem(12.2) prem(8) prem(14);
+        font-size: prem(13);
+        width: 100%;
+        outline:none;
+        appearance: none;
+        border:none;
+    }
+}
+
+.p-admin-video-register-form-search__select {
+    @include mq(md) {
+        max-width: prem(336);
+        width: 100%;
+    }
+
+    select {
+        padding: prem(8) prem(12.2) prem(8) prem(14);
+        width: 100%;
+        font-size: prem(13);
+        line-height: 1;
+        border-radius: prem(5);
+        border: prem(1) solid #E5E5E5;
+        background-image: url('../images/icon/icon_arrow_dawn_bk.svg');
+        background-repeat: no-repeat;
+        background-size: prem(8);
+        background-position: right prem(12.2) top prem(16.55);
+        appearance: none;
+        cursor: pointer;
+    }
+}
+
+.p-admin-video-register-form-search__wrap {
+    @include mq(md) {
+        display: flex;
+    }
+}
+
+.p-admin-video-register-form-search__library {
+    padding:prem(8) prem(18) prem(8) prem(8);
+    max-height:prem(183);
+    overflow-y: scroll;
+    background-color: #F8F8F8;
+    @include mq(md) {
+        max-width: 50%;
+        width: 100%;
+        border-radius: 0 0 0 prem(5);
+    }
+
+    li {
+        transition: 0.3s;
+        a {
+            font-size: prem(14);
+            color: $c-gray;
+            padding:prem(6) prem(18) prem(6) prem(7);
+        }
+        &:hover {
+            background-color: $c-orange;
+            a {
+                color: $c-white;
+            }
+        }
+        &:nth-child(n+2) {
+            margin-top: prem(7);
+        }
+    }
+}
+
+.p-admin-video-register-form-search__result {
+    padding:prem(14.5) prem(37) prem(14.5) prem(12.5);
+    p {
+        font-size: prem(14);
+    }
+}

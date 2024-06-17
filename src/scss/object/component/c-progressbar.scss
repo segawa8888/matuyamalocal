@@ -1,0 +1,65 @@
+@use 'foundation' as *;
+
+.c-progressbar {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    z-index: 10;
+}
+.c-progressbar li {
+    position: relative;
+    list-style-type: none;
+    text-align: center;
+    text-transform: uppercase;
+    width: 25%;
+    color: #BABABA;
+    font-weight: $medium;
+    counter-increment: steps;
+    font-size: prem(11);
+    @include mq(md) {
+        font-size: prem(14);
+    }
+}
+.c-progressbar li:before {
+    display: block;
+    width: prem(19);
+    height: prem(19);
+    margin: prem(7) auto prem(5) auto;
+    content: '';
+    line-height: prem(19);
+    font-size: prem(12);
+    text-align: center;
+    border-radius: 50%;
+    background-color: #D3D3D3;
+    color: $c-white;
+    content: counter(steps);
+}
+.c-progressbar li:after {
+    position: absolute;
+    z-index: -1;
+    top: prem(15);
+    left: -50%;
+    width: 100%;
+    height: prem(2);
+    content: '';
+    background-color: #D3D3D3;
+}
+.c-progressbar li:first-child:after {
+    content: none;
+}
+.c-progressbar li.active,
+.c-progressbar li.complete{
+    color: $c-btn-blue;
+}
+.c-progressbar li.active:before,
+.c-progressbar li.complete:before {
+    background-color: $c-btn-blue;
+    color: $c-white;
+}
+.c-progressbar li.active:after,
+.c-progressbar li.complete:after {
+    background-color: $c-btn-blue;
+}

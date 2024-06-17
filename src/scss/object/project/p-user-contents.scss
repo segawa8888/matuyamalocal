@@ -1,0 +1,182 @@
+@use 'foundation' as *;
+
+.p-user-contents {
+    margin-top: prem(19);
+    @include mq(md) {
+        margin-top: prem(22.5);
+    }
+}
+
+.p-user-contents__icons {
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+        gap:0 prem(15.4);
+    }
+}
+
+.p-user-contents__icon {
+    display: flex;
+    align-items: center;
+    gap:0 prem(5);
+    font-size: prem(13);
+    font-weight: $medium;
+}
+
+.p-user-contents__icon:nth-child(n+2) {
+    margin-top: prem(15);
+    @include mq(md) {
+        margin-top: initial;
+    }
+}
+
+.p-user-contents__favorite {
+    border:prem(1) solid $c-light-gray;
+    padding:prem(3.4) prem(6.7);
+    border-radius: prem(5);
+    cursor: pointer;
+    transition: all  0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: #FFE6E6;
+    }
+
+    input {
+        display: none;
+    }
+
+    input + span::before {
+        content: '';
+        display: block;
+        width:prem(14.85);
+        height:prem(13.09);
+        background-image: url(../images/icon/icon_heart.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        appearance: none;
+        margin: 0;
+        transition: all  0.3s ease;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        gap:0 prem(4.2);
+        transition: all  0.3s ease;
+    }
+
+    input + span::after {
+        content: '';
+        display: none;
+        width:prem(14.85);
+        height:prem(13.09);
+        background-image: url(../images/icon/icon_heart_red.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        appearance: none;
+        margin: 0;
+        transition: all  0.3s ease;
+    }
+
+    input:checked + span::before {
+        display: none;
+    }
+
+    input:checked + span::after {
+        display: block;
+        order:-1;
+    }
+
+    }
+
+.p-user-contents__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap:prem(13.4) prem(9);
+    margin-top: prem(19);
+    position: relative;
+    @include mq(md) {
+        align-items: center;
+        gap:0 prem(15);
+    }
+}
+
+.p-user-contents__button-start {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    background-color: $c-btn-blue;
+    border-radius: prem(10);
+    color: $c-white;
+    font-size: prem(16);
+    font-weight: $medium;
+    padding:prem(14) 0;
+    text-align: center;
+    @include mq(md) {
+        max-width: prem(258);
+    }
+}
+
+.p-user-contents__button {
+    max-width: prem(61);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    padding:prem(16) 0 prem(10) 0;
+    background-color:#EAEAEA;
+    border-radius: prem(10);
+    transition: all  0.3s ease;
+    @include mq(md) {
+        flex-wrap: nowrap;
+        gap:0 prem(10.8);
+        padding: prem(15) prem(14.2);
+        max-width:prem(125);
+    }
+
+    &.--saved {
+        background-color: $c-light-gray;
+        @include mq(md) {
+            max-width: prem(166);
+        }
+    }
+    span {
+        max-width: prem(16);
+    }
+
+    p {
+        text-align: center;
+        font-size: prem(10);
+        margin-top: prem(10);
+        width: 100%;
+        @include mq(md) {
+            margin-top: initial;
+            font-size: prem(14);
+            width: auto;
+            white-space: nowrap;
+        }
+    }
+
+    &:hover {
+        opacity: 1;
+        background-color: $c-light-gray;
+    }
+
+}
+
+.p-user-contents__click {
+    font-size: prem(18);
+    color: #FF0000;
+    position: absolute;
+    bottom:prem(25);
+    right: prem(39);
+    font-weight: $bold;
+    @include mq(md) {
+        top:prem(-41);
+        right:prem(23);
+    }
+}

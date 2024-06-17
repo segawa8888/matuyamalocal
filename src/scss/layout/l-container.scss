@@ -1,0 +1,22 @@
+@use 'foundation' as *;
+
+.l-container {
+    padding-left: prem(16);
+    padding-right: prem(16);
+}
+
+.l-container.lg\:-md {
+    @include mq(md) {
+        max-width: prem(995);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.l-container.lg\:-sm {
+    @include mq(md) {
+        max-width: prem(632);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

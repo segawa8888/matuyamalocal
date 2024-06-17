@@ -1,0 +1,17 @@
+@use 'foundation' as *;
+
+.c-space {
+    display: none;
+    min-width:prem(285);
+    height:prem(3038);
+    float:left;
+    transition: 0.5s;
+    @include mq(md) {
+        display: block;
+        min-width:prem(256);
+    }
+}
+
+.c-hidden-space {
+    display: none;
+}

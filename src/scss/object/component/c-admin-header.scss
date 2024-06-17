@@ -1,0 +1,86 @@
+@use 'foundation' as *;
+
+.c-admin-header {
+    width: 100%;
+    background-color: #F8F8F8;
+    position: relative;
+    transition: 0.5s;
+    @include mq(md) {
+      max-width: calc(100% - 256px);
+      margin-left: auto;
+      padding-top: prem(41);
+    }
+  }
+
+  .c-admin-header .c-nav-bar {
+    position: fixed;
+    top:prem(13.5);
+    left:prem(15);
+  }
+
+  .c-admin-header .c-nav-bar.c-hidden-nav-bar {
+    left:0.9375rem;
+  }
+
+  .c-admin-header__inner {
+    display:flex;
+    align-items: center; 
+    padding-left: prem(20);
+    padding-right: prem(20);
+    @include mq(md) {
+      padding: 0;
+    }
+  }
+
+  .c-admin-header__wrap {
+    display: flex;
+    align-items: center;
+    padding-left: prem(20);
+    max-width: 100%;
+    width: 100%;
+    padding-right: prem(10);
+    height: inherit;
+    flex-wrap:wrap;
+    margin-top: prem(12);
+    @include mq(md) {
+      max-width: prem(970);
+      padding-left: prem(40);
+      padding-right: prem(40);
+      margin-top: initial;
+    }
+  }
+
+  .c-admin-header__home {
+    font-size: prem(12);
+    font-weight: $bold;
+    width: 100%;
+    @include mq(md) {
+      font-size: prem(20);
+    }
+  }
+
+  .c-admin-header__notice {
+    display: flex;
+    align-items: center;
+    gap:0 prem(8.2);
+    position: relative;
+    font-weight: $medium;
+    font-size: prem(12);
+    @include mq(md) {
+      font-size: prem(16);
+    }
+    span {
+      max-width: prem(14.5);
+    }
+    &::after {
+      content: '';
+      background-color: #30D6BB;
+      width:prem(8);
+      height:prem(8);
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      right: prem(-16);
+      transform: translateY(-50%);
+    }
+  }

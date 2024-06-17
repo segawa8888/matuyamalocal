@@ -1,0 +1,14 @@
+@use 'foundation' as *;
+
+.u-mobile {
+    @include mq(md) {
+        display: none;
+    }
+}
+
+.u-desktop {
+    display: none;
+    @include mq(md) {
+        display: block;
+    }
+}

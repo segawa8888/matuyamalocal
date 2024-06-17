@@ -1,0 +1,143 @@
+@use 'foundation' as *;
+
+.p-profile__tab {
+    margin-top: prem(26);
+}
+
+.p-profile__wrapper {
+    border-radius: prem(10);
+    background-color: $c-white;
+    margin-top: prem(13);
+    padding:prem(28.3) 0 prem(43) 0;
+    box-shadow: 0px prem(3) prem(6) 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: prem(20.3);
+    @include mq(md) {
+        margin-bottom: prem(65);
+    }
+}
+
+.p-profile__inner {
+    @include mq(md) {
+        max-width: prem(581);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.p-profile__list:nth-child(n+2) {
+    margin-top: prem(32);
+    @include mq(md) {
+        margin-top: prem(37);
+    }
+}
+
+.p-profile__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 prem(14);
+    @include mq(md) {
+        padding: 0;
+    }
+    p {
+        font-size: prem(16);
+        font-weight: $medium
+    }
+}
+
+.p-profile__btn {
+    font-size: prem(14);
+    font-weight: $medium;
+    color: $c-white;
+    padding:prem(8) prem(18.5);
+    background-color: $c-btn-blue;
+    border-radius: prem(10);
+}
+
+.p-profile__table {
+    margin-top: prem(11);
+    width: 100%;
+    
+
+    tbody,tr {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        @include mq(md) {
+            display: flex;
+        }
+    }
+
+    td,th {
+        width: 100%;
+        display: block;
+        text-align: left;
+        padding:prem(10) prem(14);
+        font-size: prem(14);
+        border-top: prem(1) solid #EAEAEA;
+    }
+
+    th {
+        background-color: #F8F8F8;
+        color: #505050;
+        font-weight: $regular;
+        @include mq(md) {
+            max-width: prem(180);
+            width: 100%;
+            border-left: prem(1) solid #EAEAEA;
+            padding:prem(22) 0 prem(17) prem(27);
+        }
+    }
+
+    td {
+        font-weight: $medium;
+        color: $c-black;
+        @include mq(md) {
+            border-right: prem(1) solid #EAEAEA;
+            padding:prem(18) 0 prem(15) prem(33);
+        }
+    }
+
+    tr:first-child {
+        @include mq(md) {
+            th {
+                border-radius: prem(5) 0 0 0;
+            }
+            td {
+                border-radius: 0 prem(5) 0 0;
+            }
+        }
+    }
+
+    tr:last-child {
+        td {
+            border-bottom: prem(1) solid #EAEAEA;
+        }
+        @include mq(md) {
+            th {
+                border-radius: 0 0 0 prem(5);
+            }
+            td {
+                border-radius:0 0 prem(5) 0;
+            } 
+        }
+    } 
+}
+
+.p-profile__logout {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: prem(42);
+    text-align: center;
+    text-decoration: underline;
+    color: $c-btn-blue;
+    font-size: prem(14);
+    font-weight: $medium;
+    @include mq(md) {
+        margin-top: prem(60);
+    }
+}

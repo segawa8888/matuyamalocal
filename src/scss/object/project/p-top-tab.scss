@@ -1,0 +1,20 @@
+@use 'foundation' as *;
+
+.p-top-tab {
+    margin-top: prem(13.5);
+    position: relative;
+    @include mq(md) {
+        margin-top: prem(21.5);
+        position: relative;
+    }
+}
+
+.p-top-tab-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: prem(13);
+    color:$c-btn-blue;
+    font-weight: $medium;
+}

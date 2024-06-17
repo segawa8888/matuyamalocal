@@ -1,0 +1,28 @@
+@use 'foundation' as *;
+
+.c-search-nav {
+    position:fixed;
+    z-index: 999;
+    top:-120%;
+    right:0;
+    width:100%;
+    background:#F8F8F8;
+    transition: all 0.6s;
+    border-radius: prem(10);
+    @include mq(md) {
+        right:prem(41);
+        max-width: prem(885);
+    }
+}
+
+.c-search-nav.open {
+    top: 0;
+}
+
+.c-serach-nav__close {
+    max-width: prem(14.19);
+    position: absolute;
+    top:prem(35.9);
+    right:prem(30.8);
+    cursor: pointer;
+}

@@ -1,0 +1,46 @@
+@use 'foundation' as *;
+
+.c-nav-footer {
+    margin-top: auto;
+    border-top: prem(1) solid $c-gray;
+    padding:prem(30) prem(25.6) prem(25) prem(32) ;
+}
+
+.c-nav-footer__menu a {
+    display: block;
+    font-size: prem(14);
+    color: $c-white;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        right:0;
+        width:prem(7.89);
+        height:prem(7.89);
+        background-image: url('../images/icon/icon_arrow_right_wh.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.c-nav-footer__menu:nth-child(n+2) {
+    margin-top: prem(15);
+}
+
+.c-nav-footer__setting {
+    color: $c-white;
+    font-size: prem(13);
+    cursor: pointer;
+    max-width: prem(26);
+    width: 100%;
+    text-align: center;
+    span {
+        max-width: prem(20);
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

@@ -1,0 +1,155 @@
+@use 'foundation' as *;
+
+.p-register {
+    background: url('../images/register/register_back_sp.png') #EAEAEA no-repeat center top;
+    background-size: 150%;
+    @include mq(md) {
+        background-size: 100%;
+    }
+}
+
+.p-register-header {
+    margin-top: prem(28.8);
+}
+
+.p-register-header__logo {
+    max-width: prem(164.78);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-register-header.--has-border .p-register-header__logo {
+    max-width: prem(251.04);
+}
+
+.p-register-main {
+    padding: 0 prem(16);
+    margin-top: prem(37.3);
+    margin-bottom: prem(38.6);
+    @include mq(md) {
+        margin-top: prem(75.2);
+        margin-bottom: prem(92.7);
+    }
+}
+
+.p-register__container {
+    background-color: $c-white;
+    border-radius: prem(10);
+    box-shadow: 0px prem(3) prem(50) 0px rgba(0, 0, 0, 0.1);
+    &:nth-child(n+2) {
+        margin-top: prem(28.1);
+        @include mq(md) {
+            margin-top: prem(42.1);
+        }
+    }
+}
+
+.p-register__inner {
+    padding:prem(40) 0 prem(55.5) 0;
+    @include mq(md) {
+        padding:prem(52) 0 prem(97.7) 0;
+    }
+}
+
+.p-register__form {
+    margin-top: prem(44.5);
+    @include mq(md) {
+        margin-top: prem(81);
+        max-width: prem(430);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.p-register-form__wrap.p-register-form__wrap--textarea {
+    @include mq(md){
+        align-items: flex-start;
+    }
+}
+
+.p-register-form__wrap:nth-child(n+2) {
+    margin-top: prem(34);
+}
+
+.p-register-form__label {
+    font-size: prem(16);
+    font-weight: $medium;
+}
+
+.p-register-form__wrap.p-register-form__wrap--textarea .p-register-form__label {
+    @include mq(md){
+        margin-top: prem(11);
+    }
+}
+
+.p-register-form__label span {
+    margin-left: prem(10);
+    padding: prem(3) prem(5);
+    display: inline-block;
+    font-size: prem(12);
+    color: $c-white;
+    font-weight: $medium;
+    background-color: $c-btn-blue;
+    border-radius: prem(5);
+}
+
+.p-register-form__input {
+    margin-top: prem(11);
+}
+
+.p-register-form__input input {
+    max-width: 100%;
+    width: 100%;
+    border: prem(1) solid #E5E5E5;
+    border-radius: prem(5);
+    padding:prem(9) prem(14);
+}
+
+.p-register-form__input,
+.p-register-form__select,
+.p-register-form__radio,
+.p-register-form__checkbox,
+.p-register-form__textarea {
+
+    &::placeholder {
+        color: #727272;
+        font-size: prem(14);
+    }
+}
+
+.p-register-form__input,
+.p-register-form__textarea {
+    flex-grow: 1;
+}
+
+.p-register-form__text {
+    font-size: prem(13);
+    font-weight: $regular;
+    color: #505050;
+    margin-top: prem(35.8);
+    a {
+        color: $c-btn-blue;
+        text-decoration: underline;
+    }
+}
+
+.p-register-btn input {
+    margin-top: prem(33.3);
+    background-color: $c-deep-red;
+}
+
+.p-register__logo {
+    max-width: prem(228.97);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-register-complete__text {
+    margin-top: prem(35);
+    font-size: prem(14);
+    font-weight: $medium;
+    line-height: calc(19.2/14);
+    @include mq(md) {
+        margin-top: prem(72.8);
+    }
+}
